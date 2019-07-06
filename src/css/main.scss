@@ -21,7 +21,9 @@ $yellow: #cc8323;
 @import "_misc/setting";
 
 // components
+@import "../components/logo/logo";
 @import "../components/menu/menu";
+@import "../components/burger/burger";
 
 // style
 @import "../pages/layout/_layout";

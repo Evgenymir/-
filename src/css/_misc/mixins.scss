@@ -84,12 +84,24 @@
 
 //responsive
 
-@mixin desctop {
+@mixin fullhd {
+    @media screen and(max-width: 1640px) {
+        @content;
+    }
+}
+
+@mixin laptop-wide {
+    @media screen and(max-width: 1470px) {
+        @content;
+    }
+}
+
+@mixin laptop {
 	@media screen and (max-width: 1280px) {
 		@content;
 	}
 }
-@mixin laptop {
+@mixin tablets-landscape {
 	@media screen and (max-width: 992px) {
 		@content;
 	}
@@ -99,7 +111,7 @@
 		@content;
 	}
 }
-@mixin phone {
+@mixin mobile {
 	@media screen and (max-width: 480px) {
 		@content;
 	}
