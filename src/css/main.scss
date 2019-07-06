@@ -1,0 +1,34 @@
+// vars
+$text: #363636;
+$white: #ffffff;
+$darkText: #252525;
+$grey: #959595;
+$lightGrey: #d0d0d0;
+$bgRed: #f1113e;
+$red: #a22c39;
+$darkRed: #a10c10;
+$purple: #b74685;
+$violet: #8c499b;
+$blue: #0a3a85;
+$lightBlue: #60c3ec;
+$orange: #f48c1f;
+$yellow: #cc8323;
+
+// layout
+@import "_misc/font";
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/setting";
+
+// components
+@import "../components/menu/menu";
+
+// style
+@import "../pages/layout/_layout";
+@import "../pages/layout/_header";
+@import "../pages/index";
+@import "../pages/about";
+@import "../pages/layout/_footer";
+
+// media queris
+@import "../css/adaptive/adaptive"

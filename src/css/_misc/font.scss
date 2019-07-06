@@ -1,0 +1,54 @@
+// font
+@font-face {
+    font-family: 'plumbmediumcregular';
+    src: url('../fonts/plumbmediumc.eot');
+    src: url('../fonts/plumbmediumc.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumbmediumc.woff2') format('woff2'),
+         url('../fonts/plumbmediumc.woff') format('woff'),
+         url('../fonts/plumbmediumc.ttf') format('truetype'),
+         url('../fonts/plumbmediumc.svg#plumbmediumcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'plumbboldcregular';
+    src: url('../fonts/plumbboldc.eot');
+    src: url('../fonts/plumbboldc.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumbboldc.woff2') format('woff2'),
+         url('../fonts/plumbboldc.woff') format('woff'),
+         url('../fonts/plumbboldc.ttf') format('truetype'),
+         url('../fonts/plumbboldc.svg#plumbboldcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'plumblightcregular';
+    src: url('../fonts/plumblightc.eot');
+    src: url('../fonts/plumblightc.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plumblightc.woff2') format('woff2'),
+         url('../fonts/plumblightc.woff') format('woff'),
+         url('../fonts/plumblightc.ttf') format('truetype'),
+         url('../fonts/plumblightc.svg#plumblightcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+// font_mixin
+
+@mixin plumb ($style: medium) {
+	@if $style == light {
+		 font-family: 'plumblightcregular', Arial, sans-serif;
+	}
+
+	@if $style == bold {
+		font-family: 'plumbboldcregular', Arial, sans-serif;
+	}
+
+	@if $style == medium {
+		font-family: 'plumbmediumcregular', Arial, sans-serif;
+	}
+}
