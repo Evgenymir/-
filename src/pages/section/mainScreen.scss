@@ -1,0 +1,353 @@
+.b-mainScreen {
+	@include bg();
+	position: relative;
+	background-image: url(../img/bg/mainScreen.png);
+	padding: 90px 0 440px;
+
+	@include laptop-wide {
+		padding: 90px 0 370px;
+	}
+
+	@include laptop {
+		 padding: 70px 0 300px;
+	}
+
+	@include tablets-landscape {
+		background-image: url(../img/bg/mainScreen992.png);
+		padding-bottom: 245px;
+	}
+
+	@include tablets {
+		background-image: url(../img/bg/mainScreen768.png);
+	    padding-bottom: 160px;
+	}
+
+	@include mobile {
+		background-image: url(../img/bg/mainScreen480.png);
+	    padding-bottom: 140px;
+	    padding-top: 60px;
+	}
+}
+
+.b-mainScreen__liveView {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to right, $bgRed, $purple);
+
+	&.active {
+		display: block;
+	}
+}
+
+.b-liveView {
+	@include flex(space-between);
+	align-items: center;
+	padding: 10px 0;
+
+	@include tablets {
+		.liveView__button {
+			width: 150px;
+			height: 25px;
+			line-height: 25px;
+		}
+	}
+
+	@include mobile {
+		.liveView__button {
+			width: 130px;
+			line-height: 23px;
+		}
+	}
+}
+
+.b-liveView__text {
+	@include plumb(light);
+	position: relative;
+	font-size: rem(18px);
+	color: $white;
+	line-height: 1.1;
+	padding-left: 90px;
+
+	&:before {
+		@include bg(contain);
+		content: "";
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/icon/play.png);
+		position: absolute;
+		top: -12px;
+		left: 12px;
+	}
+
+	@include laptop {
+		font-size: rem(16px);
+		padding-left: 50px;
+
+		&:before {
+			width: 30px;
+			height: 40px;
+		}
+	}
+
+	@include tablets-landscape {
+		font-size: rem(14px);
+
+		&:before {
+			top: 50%;
+			margin-top: -20px;
+		}
+	}
+
+	@include tablets {
+		font-size: rem(12px);
+		padding-left: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.b-mainScreen__logo {
+	position: relative;
+	max-width: 620px;
+	font-size: rem(46px);
+	color: $white;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin: 0 auto;
+	padding-left: 11%;
+	margin-bottom: 150px;
+
+	h1 {
+		font-size: inherit;
+		font-weight: inherit;
+		margin: 0;
+	}
+
+	&:before {
+		@include bg(contain);
+		content: "";
+		width: 132px;
+		height: 120px;
+		background-image: url(../img/logoGrey.png);
+		position: absolute;
+		top: 0;
+		left: 2%;
+	}
+
+	@include laptop-wide {
+		line-height: 1.3;
+		margin-bottom: 70px;
+
+		&:before {
+			width: 115px;
+			height: 104px;
+		}
+	}
+
+	@include laptop {
+		max-width: 520px;
+		font-size: rem(40px);
+
+		&:before {
+			width: 90px;
+			height: 90px;
+		}
+	}
+
+	@include tablets-landscape {
+		max-width: 385px;
+		font-size: rem(30px);
+		margin-bottom: 50px;
+
+		&:before {
+			width: 65px;
+			height: 65px;
+		}
+	}
+
+	@include tablets {
+		max-width: 295px;
+		font-size: rem(24px);
+		margin-bottom: 40px;
+
+		&:before {
+			width: 40px;
+			height: 56px;
+		}
+	}
+
+	@include mobile {
+		max-width: 255px;
+		font-size: rem(22px);
+		margin-bottom: 20px;
+		padding-left: 50px;
+
+		&:before {
+			height: 48px;
+		}
+	}
+}
+
+.b-mainScreen__work-title {
+	@include plumb(light);
+	font-size: rem(42px);
+	color: $lightGrey;
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	margin-bottom: 45px;
+
+	@include laptop-wide {
+		font-size: rem(36px);
+	}
+
+	@include laptop {
+		font-size: rem(30px);
+		letter-spacing: 7px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(24px);
+		letter-spacing: 5px;
+	}
+
+	@include tablets {
+		font-size: rem(20px);
+		letter-spacing: 2px;
+	}
+
+	@include mobile {
+		font-size: rem(16px);
+		letter-spacing: 2px;
+		margin-bottom: 30px;
+	}
+}
+
+.b-mainScreen__work-list {
+	@include flex();
+	max-width: 1240px;
+	margin: 0 auto;
+
+	@include laptop-wide {
+		max-width: 1090px;
+	}
+
+	@include laptop {
+		max-width: 768px;
+	}
+
+	@include tablets-landscape {
+		max-width: 570px;
+	}
+
+	@include tablets {
+		max-width: 460px;
+	}
+
+	@include mobile {
+		max-width: 280px;
+	    display: block;
+	}
+}
+
+.b-mainScreen__work-item {
+	width: 25%;
+	font-size: rem(24px);
+	color: $white;
+	text-align: center;
+
+	&:last-child {
+		.mainScreen_indicators__item__icon {
+			padding-top: 12px;
+		}
+	}
+
+	@include laptop-wide {
+		font-size: rem(20px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(16px);
+	}
+
+	@include tablets {
+		font-size: rem(14px);
+	}
+
+	@include mobile {
+		@include inlineBlock();
+		width: 48%;
+		font-size: rem(14px);
+		margin-bottom: 20px;
+	}
+}
+
+.b-mainScreen__work-item-icon {
+	height: 70px;
+	margin-bottom: 20px;
+
+	@include laptop {
+		height: 60px;
+
+		img {
+			width: 100%;
+			max-width: 60px;
+		}
+	}
+
+	@include tablets-landscape {
+		height: 52px;
+
+		img {
+			width: 100%;
+			max-width: 50px;
+		}
+	}
+
+	@include tablets {
+		height: 42px;
+
+		img {
+			max-width: 40px;
+		}
+	}
+
+	@include mobile {
+		margin-bottom: 10px;
+	}
+}
+
+.b-mainScreen__work-item-counter {
+	@include plumb(bold);
+	font-size: rem(48px);
+	line-height: 1;
+
+	@include laptop-wide {
+		font-size: rem(42px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(30px);
+		margin-bottom: 5px;
+	}
+
+	@include tablets {
+		font-size: rem(24px);
+	}
+}
+
+.b-mainScreen__work-item-text {
+	@include inlineBlock();
+	max-width: 165px;
+	line-height: 1.2;
+
+	@include mobile {
+		max-width: 110px;
+	}
+}

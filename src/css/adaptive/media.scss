@@ -69,31 +69,6 @@
 
 
 
-	/* главный экран */
-	
-	.mainScreen {
-		padding: 90px 0 370px;
-	}
-	.mainScreen__logo {
-		line-height: 1.3;
-		margin-bottom: 70px;
-		&:before {
-			width: 115px;
-			height: 104px;
-		}
-	}
-	.mainScreen_indicators__title {
-		font-size: rem(36px);
-	}
-	.mainScreen_indicators {
-		max-width: 1090px;
-	}
-	.mainScreen_indicators__item {
-		font-size: rem(20px);
-	}
-	.mainScreen_indicators__item__counter {
-		font-size: rem(42px);
-	}
 
 	/* слайдер главный */
 	.mainPageSlider {
@@ -375,41 +350,6 @@
 @media screen and (max-width: 1280px) {
 
 
-
-	/* главный экран */
-	.mainScreen {
-	    padding: 70px 0 300px;
-	}
-	.liveView__text {
-		font-size: rem(16px);
-		padding-left: 50px;
-		&:before {
-			width: 30px;
-			height: 40px;
-		}
-	}
-	.mainScreen__logo {
-		max-width: 520px;
-		font-size: rem(40px);
-		&:before {
-			width: 90px;
-			height: 90px;
-		}
-	}
-	.mainScreen_indicators__title {
-		font-size: rem(30px);
-		letter-spacing: 7px;
-	}
-	.mainScreen_indicators {
-	    max-width: 768px;
-	}
-	.mainScreen_indicators__item__icon {
-		height: 60px;
-		img {
-			width: 100%;
-			max-width: 60px;
-		}
-	}
 
 	/* Главный слайдер */
 	.mainPageSlider {
@@ -1194,49 +1134,7 @@
 
 	
 
-	/* главный экран */
 
-	.mainScreen {
-		background-image: url(../img/bg/mainScreen992.png);
-		padding-bottom: 245px;
-	}
-	.liveView__text {
-		font-size: rem(14px);
-		&:before {
-			top: 50%;
-			margin-top: -20px;
-		}
-	}
-	.mainScreen__logo {
-		max-width: 380px;
-		font-size: rem(30px);
-		margin-bottom: 50px;
-		&:before {
-			width: 65px;
-			height: 65px;
-		}
-	}
-	.mainScreen_indicators__title {
-		font-size: rem(24px);
-		letter-spacing: 5px;
-	}
-	.mainScreen_indicators {
-	    max-width: 570px;
-	}
-	.mainScreen_indicators__item {
-		font-size: rem(16px);
-	}
-	.mainScreen_indicators__item__icon {
-		height: 52px;
-		img {
-			width: 100%;
-			max-width: 50px;
-		}
-	}
-	.mainScreen_indicators__item__counter {
-		font-size: rem(30px);
-		margin-bottom: 5px;
-	}
 	
 	/* Главный слайдер */
 	.mainPageSlider__wrap {
@@ -2094,55 +1992,6 @@
 
 
 
-	/* главный экран */
-	
-	.mainScreen {
-	    background-image: url(../img/bg/mainScreen768.png);
-	    padding-bottom: 160px;
-	}
-	.liveView__text {
-		font-size: rem(12px);
-		padding-left: 0;
-		&:before {
-			display: none;
-		}
-	}
-	.liveView__block {
-		.liveView__button {
-			width: 150px;
-			height: 25px;
-			line-height: 25px;
-		}
-	}
-	
-	.mainScreen__logo {
-		max-width: 290px;
-		font-size: rem(24px);
-		margin-bottom: 40px;
-		&:before {
-			width: 40px;
-			height: 56px;
-		}
-	}
-	.mainScreen_indicators__title {
-		font-size: rem(20px);
-		letter-spacing: 2px;
-	}
-	.mainScreen_indicators {
-	    max-width: 460px;
-	}
-	.mainScreen_indicators__item {
-		font-size: rem(14px);
-	}
-	.mainScreen_indicators__item__icon {
-		height: 42px;
-		img {
-			max-width: 40px;
-		}
-	}
-	.mainScreen_indicators__item__counter {
-		font-size: rem(24px);
-	}
 	
 	/* Главный слайдер */
 
@@ -2966,50 +2815,7 @@
 
 
 	
-	/* главный экран */
-	
-	.mainScreen {
-	    background-image: url(../img/bg/mainScreen480.png);
-	    padding-bottom: 140px;
-	    padding-top: 60px;
-	}
-	.liveView__block {
-		.liveView__button {
-			width: 130px;
-			line-height: 23px;
-		}
-	}
-	
-	.mainScreen__logo {
-		max-width: 250px;
-		font-size: rem(22px);
-		margin-bottom: 20px;
-		padding-left: 50px;
-		&:before {
-			height: 48px;
-		}
-	}
-	.mainScreen_indicators__title {
-		font-size: rem(16px);
-		letter-spacing: 2px;
-		margin-bottom: 30px;
-	}
-	.mainScreen_indicators {
-	    max-width: 280px;
-	    display: block;
-	}
-	.mainScreen_indicators__item {
-		@include inlineBlock();
-		width: 48%;
-		font-size: rem(14px);
-		margin-bottom: 20px;
-	}
-	.mainScreen_indicators__item__icon {
-		margin-bottom: 10px;
-	}
-	.mainScreen_indicators__item__text {
-		max-width: 110px;
-	}
+
 	
 	/* Главный слайдер */
 	
