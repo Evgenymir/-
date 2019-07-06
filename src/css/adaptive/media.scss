@@ -70,16 +70,7 @@
 
 
 
-	/* слайдер главный */
-	.mainPageSlider {
-		height: 860px;
-	}
-	.mainPageSlider__wrap {
-		max-width: 1110px;
-	}
-	.mainPageSlider__item__title {
-		font-size: rem(50px);
-	}
+
 
 	/* блок услуги */
 
@@ -351,38 +342,7 @@
 
 
 
-	/* Главный слайдер */
-	.mainPageSlider {
-	    height: 650px;
-	    margin-top: -200px;
-	    padding-top: 200px;
-	}
-	.mainPageSlider__item__date {
-		font-size: rem(30px);
-		padding-left: 90px;
-		margin-bottom: 50px;
-		&:before {
-			width: 70px;
-		}
-	}
-	.mainPageSlider__item__title {
-		font-size: rem(38px);
-	}
-	.mainPageSlider__item__text {
-		font-size: rem(22px);
-		margin-bottom: 50px;
-	}
-	.mainPageSlider__control {
-		width: 30px;
-		height: 30px;
-		margin-top: -15px;
-	}
-	.mainPageSlider__prev {
-		right: 5%;
-	}
-	.mainPageSlider__next {
-		right: 0;
-	}
+
 
 	/* блок услуги */
 
@@ -1135,37 +1095,6 @@
 	
 
 
-	
-	/* Главный слайдер */
-	.mainPageSlider__wrap {
-	    max-width: 700px;
-	}
-	.mainPageSlider {
-	    height: 570px;
-	    margin-top: -80px;
-	    padding-top: 170px;
-	}
-	.mainPageSlider__item__date {
-		font-size: rem(20px);
-		padding-left: 70px;
-		margin-bottom: 40px;
-		&:before {
-			width: 50px;
-			height: 2px;
-		}
-	}
-	.mainPageSlider__item__title {
-		font-size: rem(32px);
-	}
-	.mainPageSlider__item__text {
-		font-size: rem(20px);
-		margin-bottom: 40px;
-	}
-	.mainPageSlider__control {
-		width: 20px;
-		height: 20px;
-		margin-top: -10px;
-	}
 
 	/* блок услуги */
 	
@@ -1993,38 +1922,7 @@
 
 
 	
-	/* Главный слайдер */
 
-	.mainPageSlider__wrap {
-	    max-width: 460px;
-	}
-	.mainPageSlider {
-	    height: 400px;
-	    background-image: url(../img/bg/sliderBg768.jpg);
-	    margin-top: -65px;
-	    padding-top: 100px;
-	}
-	.mainPageSlider__item__date {
-		font-size: rem(18px);
-		padding-left: 60px;
-		margin-bottom: 30px;
-		span {
-			margin: 0 5px;
-		}
-		&:before {
-			width: 40px;
-		}
-	}
-	.mainPageSlider__item__title {
-		font-size: rem(24px);
-	}
-	.mainPageSlider__item__text {
-		font-size: rem(18px);
-		margin-bottom: 30px;
-	}
-	.mainPageSlider__control {
-		border-width: 2px;
-	}
 
 	/* блок услуги */
 
@@ -2817,26 +2715,7 @@
 	
 
 	
-	/* Главный слайдер */
-	
-	.mainPageSlider__wrap {
-	    max-width: 90%;
-	}
-	.mainPageSlider {
-	    height: auto;
-	    padding-top: 70px;
-	    padding-bottom: 90px;
-	}
 
-	.mainPageSlider__control {
-		top: auto;
-		margin-top: 0;
-		bottom: -50px;
-		left: 50%;
-	}
-	.mainPageSlider__prev {
-		margin-left: -10%;
-	}
 
 	/* блок услуги */
 
