@@ -1,0 +1,100 @@
+.b-service
+    .b-container
+        .b-service__title.b-title
+            h2 Услуги
+        .b-tabs-wrapper.j-tabs
+            .b-tabs
+                .b-tabs__item.active
+                    a.b-tabs__link.j-tab-link(href="#") Наши направления
+                .b-tabs__item
+                    a.b-tabs__link.j-tab-link(href="#") Частые вопросы
+
+            .b-tabs__content
+                .b-tabs__content-item.active
+                    - var serviceItems = ['logoCooperation', 'logoEntrepreneurship', 'logoFashionIndustry', 'logoСraftsmanship', 'logoExport', 'logoAkselerator']
+                    each serviceItem in serviceItems
+                        .b-tabs__content-item-block
+                            a(href="#")
+                                img(src="./img/" + serviceItem + ".png" alt="картинка")
+                    -;
+
+                .b-tabs__content-item
+                    - 
+                    mixin serviceItems(items)
+                        each item in items
+                            .b-tabs__content-item-block.b-question
+                                .b-question__block
+                                    .b-question__img
+                                        img(src="./img/icon/" + item.src + ".png" alt="картинка")
+                                    a.b-question__link(href="#") #{item.text}
+
+                    +serviceItems([
+                        {
+                            'src': 'question1',
+                            'text': 'Как начать свой бизнес?'
+                        },
+                        {
+                            'src': 'question2',
+                            'text': 'Какие формы предпринимательской деятельности существуют?'
+                        },
+                        {
+                            'src': 'question3',
+                            'text': 'Как получить субсидиии на свой бизнес?'
+                        },
+                        {
+                            'src': 'question4',
+                            'text': 'Какие документы необходимо оформить для начала деятельности?'
+                        },
+                        {
+                            'src': 'question5',
+                            'text': 'Какие существуют программы государственной поддержки?'
+                        },
+                        {
+                            'src': 'question6',
+                            'text': 'Какие налоги необходимо оплачивать предпринимателю?'
+                        }
+                    ])
+                    -;
+
+        .b-otherService
+            .b-otherService__item
+                .b-otherService__title.bgLinearRed Консультации для предпринимателей
+                ul.b-otherService__list
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Специальные программы государтсвенной подержки
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Правовые вопросы в части открытия собственного дела по бухгалтерскому и налоговому учету
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Финансовая и инфраструктурная поддержка
+
+                a.b-otherService__item-all-link(href="#") Все консультации
+                +button("#", "Получить консультацию")(class="b-otherService__item__button b-buttonTwo")
+            .b-otherService__item
+                .b-otherService__title.bgLinearRed Финансовая <br /> поддержка
+                ul.b-otherService__list
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Поддержка социального предпринимательства
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Возмещение аренды
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Возмещение участия в выставках
+                a.b-otherService__item-all-link(href="#") Все субсидии
+                +button("#", "Подать заявку")(class="b-otherService__item__button b-buttonTwo")
+
+            .b-otherService__item
+                .b-otherService__title.bgLinearRed Советы <br /> предпринимателям
+                ul.b-otherService__list
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") С чего начать бизнес
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Как юридически оформить документы для предпринимательской деятельсности
+
+                    li.b-otherService__list-item
+                        a.b-otherService__list-link(href="#") Какие налоги должен платить предприниматель в 2018 году
+                a.b-otherService__item-all-link(href="#") Все советы
+                +button("#", "Узнать больше")(class="b-otherService__item__button b-buttonTwo")

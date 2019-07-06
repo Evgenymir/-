@@ -1,0 +1,444 @@
+.b-service {
+	@include bg(contain);
+	background-color: $white;
+	background-image: url(../img/bg/ballTop.png);
+	padding: 100px 0;
+
+	@include laptop {
+		padding: 70px 0;
+	}
+
+	@include tablets-landscape {
+		padding: 50px 0;
+	}
+
+	@include tablets {
+		padding: 40px 0;
+	}
+
+	@include mobile {
+		padding: 30px 0;
+	}
+}
+
+.b-tabs-wrapper {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.b-tabs {
+	text-align: center;
+}
+
+.b-tabs__item {
+	@include inlineBlock();
+	position: relative;
+	padding-bottom: 45px;
+	margin-right: 7%;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:before {
+		@include bg(contain);
+		content: "";
+		width: 240px;
+		height: 25px;
+		background-image: url(../img/arrowDown.png);
+		position: absolute;
+		bottom: 0;
+		left: -5px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all ease 0.3s;
+	}
+
+	&.active {
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	@include laptop {
+		padding-bottom: 30px;
+		margin-right: 4%;
+
+		&:before {
+			width: 190px;
+			height: 20px;
+			left: 0;
+		}
+	}
+
+	@include tablets-landscape {
+		padding-bottom: 20px;
+		margin-right: 3%;
+
+		&:before {
+			width: 155px;
+			height: 18px;
+		}
+	}
+
+	@include tablets {
+		margin-right: 2%;
+
+		&:before {
+			width: 137px;
+			height: 15px;
+		}
+	}
+
+	@include mobile {
+		max-width: 90px;
+		padding-bottom: 15px;
+
+		&:before {
+			width: 90px;
+			height: 10px;
+		}
+	}
+}
+
+.b-tabs__link {
+	font-size: rem(27px);
+	color: $darkText;
+	text-decoration: none;
+
+	@include laptop {
+		font-size: rem(22px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(18px);
+	}
+
+	@include tablets {
+		font-size: rem(16px);
+	}
+}
+
+.b-tabs__content {
+	padding-top: 80px;
+
+	@include laptop {
+		padding-top: 50px;
+	}
+
+	@include tablets-landscape {
+		padding-top: 40px;
+	}
+
+	@include tablets {
+		padding-top: 20px;
+	}
+}
+
+.b-tabs__content-item {
+	display: none;
+
+	&.active {
+		@include flex();
+
+		@include mobile {
+			display: block;
+		}
+	}
+}
+
+.b-tabs__content-item-block {
+	width: 33.3%;
+	margin-bottom: 140px;
+
+	img {
+		width: 97%;
+	}
+
+	a {
+		@include plumb(bold);
+		font-size: rem(18px);
+		color: $darkText;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+
+	.b-question__block {
+		max-width: 440px;
+		position: relative;
+	}
+
+	.b-question__img {
+		width: 20%;
+		@include inlineBlock(middle);
+		margin-right: 2%;
+	}
+
+	.b-question__link {
+		@include inlineBlock(middle);
+		width: 75%;
+	}
+
+	@include laptop {
+		margin-bottom: 60px;
+
+		a {
+			font-size: rem(14px);
+		}
+
+		.b-question__img {
+			width: 16%;
+		}
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 40px;
+
+		a {
+			font-size: rem(12px);
+		}
+
+		.b-question__img {
+			width: 14%;
+			padding-top: 5px;
+		}
+
+		.b-question__link {
+			width: 81%;
+		}
+	}
+
+	@include tablets {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	@include mobile {
+		width: 100%;
+		margin-bottom: 20px;
+
+		img {
+			display: block;
+			max-width: 280px;
+			margin: 0 auto;
+		}
+
+		.b-question__block {
+			max-width: 280px;
+			margin: 0 auto;
+		}
+	}
+}
+	
+.b-otherService {
+	@include flex();
+
+	@include tablets {
+		display: block;
+	}
+}
+
+.b-otherService__item {
+	width: 33.3%;
+
+	@include tablets {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+.b-otherService__title {
+	min-height: 112px;
+	position: relative;
+	@include plumb(light);
+	font-size: rem(32px);
+	color: $lightGrey;
+	line-height: 1.2;
+	padding-left: 45px;
+	margin-bottom: 45px;
+
+	&:before {
+		content: "";
+		width: 27px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	@include laptop-wide {
+		min-height: 93px;
+		font-size: rem(26px);
+	}
+
+	@include laptop {
+		min-height: 76px;
+		font-size: rem(22px);
+		padding-left: 30px;
+		margin-bottom: 30px;
+
+		&:before {
+			width: 20px;
+		}
+	}
+
+	@include tablets-landscape {
+		min-height: 66px;
+		font-size: rem(20px);
+		padding-left: 15px;
+		margin-bottom: 20px;
+
+		&:before {
+			width: 7px;
+		}
+	}
+
+	@include tablets {
+		min-height: auto;
+	}
+}
+
+.b-otherService__list {
+	@include reset-list();
+	min-height: 235px;
+	margin-bottom: 20px;
+
+	@include laptop-wide {
+		min-height: 210px;
+	}
+
+	@include laptop {
+		min-height: 200px;
+	}
+
+	@include tablets-landscape {
+		min-height: 190px;
+	}
+
+	@include tablets {
+		min-height: auto;
+	}
+}
+
+.b-otherService__list-item {
+	position: relative;
+	margin-bottom: 25px;
+	padding-left: 40px;
+	padding-right: 5%;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		content: "";
+		width: 9px;
+		height: 9px;
+		background-color: $red;
+		border-radius: 50%;
+		position: absolute;
+		top: 6px;
+		left: 12px;
+	}
+
+	@include laptop {
+		margin-bottom: 15px;
+	    padding-left: 20px;
+	    padding-right: 3%;
+
+	    &:before {
+	    	width: 6px;
+	    	height: 6px;
+	    	left: 0;
+	    }
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 10px;
+	    padding-left: 15px;
+	    padding-right: 2%;
+
+	    &:before {
+	    	width: 5px;
+	    	height: 5px;
+	    	left: 0;
+	    }
+	}
+}
+.b-otherService__list-link {
+	font-size: rem(22px);
+	color: $red;
+	line-height: 1;
+	text-decoration: none;
+
+	@include laptop-wide {
+		font-size: rem(18px);
+	}
+
+	@include laptop {
+		font-size: rem(16px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(14px);
+	}
+}
+
+.b-otherService__item-all-link {
+	position: relative;
+	@include inlineBlock();
+	@include plumb(bold);
+	font-size: rem(20px);
+	color: $red;
+	text-decoration: none;
+	line-height: 1;
+	margin-bottom: 60px;
+	padding-right: 41px;
+
+	&:before {
+		@include bg(contain);
+		background-image: url(../img/icon/arrowRight.png);
+		content: "";
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: -2px;
+		right: 0;
+		transition: all ease 0.5s;
+	}
+
+	&:hover {
+		&:before {
+			right: -5px;
+		}
+	}
+
+	@include laptop-wide {
+		font-size: rem(18px);
+
+		&:before {
+			top: -3px;
+		}
+	}
+
+	@include laptop {
+		margin-bottom: 35px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(14px);
+		padding-right: 25px;
+		margin-bottom: 25px;
+
+		&:before {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+
+.b-otherService__item__button {
+	display: block;
+}

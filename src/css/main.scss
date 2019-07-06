@@ -24,6 +24,7 @@ $yellow: #cc8323;
 @import "../components/logo/logo";
 @import "../components/menu/menu";
 @import "../components/burger/burger";
+@import "../components/button/button";
 
 // style
 @import "../pages/layout/_layout";
@@ -31,6 +32,8 @@ $yellow: #cc8323;
 @import "../pages/index";
 @import "../pages/section/mainScreen";
 @import "../pages/section/mainSlider";
+@import "../pages/section/services";
+@import "../pages/section/activity";
 @import "../pages/about";
 @import "../pages/layout/_footer";
 

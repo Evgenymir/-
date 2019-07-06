@@ -102,7 +102,7 @@ img {max-width: 100%;}
 	}
 }
 
-.title {
+.b-title {
 	@include plumb(light);
 	font-size: rem(64px);
 	color: $lightGrey;
@@ -164,82 +164,6 @@ img {max-width: 100%;}
 
 	@include tablets-landscape {
 		font-size: rem(30px);
-	}
-}
-
-.b-button {
-	@include inlineBlock();
-	width: 298px;
-	height: 57px;
-	font-size: rem(18px);
-	color: $white;
-	line-height: 55px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	background-color: transparent;
-	border: 1px solid $white;
-	border-radius: 25px;
-	cursor: pointer;
-	transition: all ease 0.5s;
-
-	&:hover {
-		border-radius: 10px;
-	}
-
-	@include laptop {
-		width: 240px;
-		height: 40px;
-		font-size: rem(14px);
-		line-height: 40px;
-	}
-
-	@include tablets-landscape {
-		width: 200px;
-		font-size: rem(12px);
-	}
-
-	@include mobile {
-		height: 30px;
-	    line-height: 28px;
-	}
-}
-
-.buttonTwo {
-	@include inlineBlock();
-	width: 298px;
-	height: 57px;
-	font-size: rem(18px);
-	color: $white;
-	line-height: 55px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 25px;
-	border: none;
-	background: linear-gradient(to right, $bgRed, $purple);
-	cursor: pointer;
-	transition: all ease 0.5s;
-
-	&:hover {
-		background: linear-gradient(to left, $bgRed, $purple);
-	}
-
-	@include laptop {
-		width: 240px;
-		height: 40px;
-		font-size: rem(14px);
-		line-height: 40px;
-	}
-
-	@include tablets-landscape {
-		width: 200px;
-		font-size: rem(12px);
-	}
-
-	@include mobile {
-		height: 30px;
-	    line-height: 30px;
 	}
 }
 
@@ -354,7 +278,7 @@ img {max-width: 100%;}
 /* градиенты для линий заголовка */
 .bgLinearRed {
 	&:before {
-		background: linear-gradient(to bottom, #f1123f, #b74685);
+		background-image: linear-gradient(to bottom, #f1123f, #b74685);
 	}
 }
 .bgLinearOrange {

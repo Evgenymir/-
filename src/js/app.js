@@ -1,9 +1,30 @@
-//import objectFitImages from 'object-fit-images'; // => Полифил для картинок с object-fit 
+import objectFitImages from 'object-fit-images'; // => Полифил для картинок с object-fit 
 import MainSlider from '../pages/section/mainSlider.js';
+import Tabs from '../pages/section/services.js';
+import SliderActivity from '../pages/section/activity.js';
 
+window.onload = () => {
 
-/* Подключаем главный слайдер */
-const mainSliderItem = document.querySelector('.j-mainSlider');
-if(mainSliderItem) {
-	MainSlider();
-}
+	/* Подключаем полифил для свойства object-fill */
+		let images = document.querySelectorAll('.j-image-polyfill');
+		objectFitImages(images);
+
+	/* Подключаем главный слайдер */
+	const mainSliderItem = document.querySelector('.j-mainSlider');
+	if(mainSliderItem) {
+		MainSlider();
+	}
+
+	/* Подключение табов */
+	const tabsItem = document.querySelector('.j-tabs');
+	if(tabsItem) {
+		Tabs();
+	}
+
+	/* Подключаем слайдер мероприятий */
+	const sliderActivityItem = document.querySelector('.j-slider-activity');
+	if(sliderActivityItem) {
+		SliderActivity();
+	}
+
+};

@@ -4,24 +4,7 @@
 @media screen and (max-width: 1640px) {
 
 
-	/* слайдер мероприятий */
-	.mainPageSliderEvent__wrap {
-		max-width: 1150px;
-	}
-	.mainPageSliderEvent__control {
-		width: 130px;
-	}
-	.mainPageSliderEvent__control__prev {
-	    left: -145px;
-	}
-	.mainPageSliderEvent__control__next {
-	    right: -145px;
-	}
-	.mainPageSliderEvent__prev,
-	.mainPageSliderEvent__next {
-		width: 130px;
-		height: 43px;
-	}
+
 	/* блок фото-видео галереи */
 	.mainPageGallery__title {
 		min-height: 90px;
@@ -72,43 +55,7 @@
 
 
 
-	/* блок услуги */
-
-	.mainPageService__denomination__title {
-		min-height: 93px;
-		font-size: rem(26px);
-	}
-	.mainPageService__denomination__list {
-		min-height: 210px;
-	}
-	.mainPageService__denomination__list__link {
-		font-size: rem(18px);
-	}
-	.mainPageService__denomination__all {
-		font-size: rem(18px);
-		&:before {
-			top: -3px;
-		}
-	}
-
-	/* слайдер мероприятий */
-	.mainPageSliderEvent__title {
-		margin-bottom: 80px;
-	}
-	.mainPageSliderEvent__wrap {
-	    max-width: 970px;
-	}
-	.mainPageSliderEvent__item__left {
-		width: 40%;
-		padding-top: 30px;
-	}
-		.mainPageSliderEvent__item__img {
-			width: 350px;
-			height: 350px;
-		}
-	.mainPageSliderEvent__item__right {
-		width: 60%;
-	}
+	
 	/* последние новости */
 	.lastNews__tab__content__block__text__title {
 		font-size: rem(22px);
@@ -344,106 +291,7 @@
 
 
 
-	/* блок услуги */
-
-	.mainPageService {
-		padding: 70px 0;
-	}
-	.mainPageService__tab__item {
-		padding-bottom: 30px;
-		margin-right: 4%;
-		&:before {
-			width: 190px;
-			height: 20px;
-			left: 0;
-		}
-	}
-	.mainPageService__tab__link {
-		font-size: rem(22px);
-	}
-	.mainPageService__tabs__content {
-	    padding-top: 50px;
-	}
-	.mainPageService__tab__content__item__block {
-		margin-bottom: 60px;
-		a {
-			font-size: rem(14px);
-		}
-		.question__img {
-			width: 16%;
-		}
-	}
-	.mainPageService__denomination__title {
-		min-height: 76px;
-		font-size: rem(22px);
-		padding-left: 30px;
-		margin-bottom: 30px;
-		&:before {
-			width: 20px;
-		}
-	}
-	.mainPageService__denomination__list {
-		min-height: 200px;
-	}
-	.mainPageService__denomination__list__item {
-	    margin-bottom: 15px;
-	    padding-left: 20px;
-	    padding-right: 3%;
-	    &:before {
-	    	width: 6px;
-	    	height: 6px;
-	    	left: 0;
-	    }
-	}
-	.mainPageService__denomination__list__link {
-		font-size: rem(16px);
-	}
-	.mainPageService__denomination__all {
-		margin-bottom: 35px;
-	}
 	
-	/* слайдер мероприятий */
-	.mainPageSliderEvent {
-		padding-top: 70px;
-	}
-	.mainPageSliderEvent__title {
-		margin-bottom: 50px;
-	}
-	.mainPageSliderEvent__wrap {
-	    max-width: 768px;
-	}
-	.mainPageSliderEvent__item__left {
-		width: 35%;
-	}
-		.mainPageSliderEvent__item__img {
-			width: 250px;
-			height: 250px;
-		}
-	.mainPageSliderEvent__item__right {
-		width: 65%;
-	}
-	.mainPageSliderEvent__item__title {
-		min-height: 150px;
-		font-size: rem(32px);
-	}
-	.mainPageSliderEvent__item__desc {
-		margin-bottom: 30px;
-	}
-	.mainPageSliderEvent__control {
-		width: 90px;
-		font-size: rem(16px);
-	}
-	.mainPageSliderEvent__control__prev {
-	    left: -100px;
-	}
-	.mainPageSliderEvent__control__next {
-	    right: -100px;
-	}
-	.mainPageSliderEvent__prev, 
-	.mainPageSliderEvent__next {
-	    width: 90px;
-	    height: 30px;
-	}
 
 	/* последние новости */
 	.lastNews {
@@ -1096,123 +944,7 @@
 
 
 
-	/* блок услуги */
-	
-	.mainPageService {
-		padding: 50px 0;
-	}
-	.mainPageService__tab__item {
-		padding-bottom: 20px;
-		margin-right: 3%;
-		&:before {
-			width: 155px;
-			height: 18px;
-		}
-	}
-	.mainPageService__tab__link {
-		font-size: rem(18px);
-	}
-	.mainPageService__tabs__content {
-	    padding-top: 40px;
-	}
-	.mainPageService__tab__content__item__block {
-		margin-bottom: 40px;
-		a {
-			font-size: rem(12px);
-		}
-		.question__img {
-			width: 14%;
-			padding-top: 5px;
-		}
-		.question__link {
-			width: 81%;
-		}
-	}
-	.mainPageService__denomination__title {
-		min-height: 66px;
-		font-size: rem(20px);
-		padding-left: 15px;
-		margin-bottom: 20px;
-		&:before {
-			width: 7px;
-		}
-	}
-	.mainPageService__denomination__list {
-		min-height: 190px;
-	}
-	.mainPageService__denomination__list__item {
-	    margin-bottom: 10px;
-	    padding-left: 15px;
-	    padding-right: 2%;
-	    &:before {
-	    	width: 5px;
-	    	height: 5px;
-	    	left: 0;
-	    }
-	}
-	.mainPageService__denomination__list__link {
-		font-size: rem(14px);
-	}
-	.mainPageService__denomination__all {
-		font-size: rem(14px);
-		padding-right: 25px;
-		margin-bottom: 25px;
-		&:before {
-			width: 18px;
-			height: 18px;
-		}
-	}
-	/* слайдер мероприятий */
-	.mainPageSliderEvent {
-		padding-top: 50px;
-	}
-	.mainPageSliderEvent__title {
-		margin-bottom: 40px;
-	}
-	.mainPageSliderEvent__wrap {
-	    max-width: 630px;
-	}
-	.mainPageSliderEvent__item__left {
-		width: 40%;
-	}
-		.mainPageSliderEvent__item__img {
-			width: 230px;
-			height: 230px;
-			border-width: 3px;
-		}
-	.mainPageSliderEvent__item__right {
-		width: 60%;
-	}
-	.mainPageSliderEvent__item__title {
-		min-height: 120px;
-		font-size: rem(26px);
-	}
-	.mainPageSliderEvent__item__desc {
-		margin-bottom: 20px;
-	}
-	.mainPageSliderEvent__item__more {
-		font-size: rem(18px);
-		padding-right: 30px;
-		&:after {
-			width: 20px;
-			height: 20px;
-		}
-	}
-	.mainPageSliderEvent__control {
-		width: 55px;
-		font-size: rem(14px);
-	}
-	.mainPageSliderEvent__control__prev {
-	    left: -60px;
-	}
-	.mainPageSliderEvent__control__next {
-	    right: -60px;
-	}
-	.mainPageSliderEvent__prev, 
-	.mainPageSliderEvent__next {
-	    width: 55px;
-	    height: 20px;
-	}
+
 
 	/* последние новости */
 	.lastNews {
@@ -1924,98 +1656,9 @@
 	
 
 
-	/* блок услуги */
+	
 
-	.mainPageService {
-		padding: 40px 0;
-	}
-	.mainPageService__tab__item {
-		margin-right: 2%;
-		&:before {
-			width: 137px;
-			height: 15px;
-		}
-	}
-	.mainPageService__tab__link {
-		font-size: rem(16px);
-	}
-	.mainPageService__tabs__content {
-	    padding-top: 20px;
-	}
-	.mainPageService__tab__content__item__block {
-		width: 50%;
-		margin-bottom: 20px;
-	}
-	.mainPageService__denomination {
-		display: block;
-	}
-	.mainPageService__denomination__item {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.mainPageService__denomination__title {
-		min-height: auto;
-	}
 
-	.mainPageService__denomination__list {
-		min-height: auto;
-	}
-
-	/* слайдер мероприятий */
-	.mainPageSliderEvent {
-		padding: 40px 0;
-	}
-	.mainPageSliderEvent__title {
-		margin-bottom: 30px;
-	}
-	.mainPageSliderEvent__wrap {
-	    max-width: 385px;
-	}
-	.mainPageSliderEvent__item__left {
-		width: 34%;
-		padding-top: 45px;
-	}
-		.mainPageSliderEvent__item__img {
-			width: 115px;
-			height: 115px;
-			border-width: 2px;
-		}
-	.mainPageSliderEvent__item__right {
-		width: 65%;
-	}
-	.mainPageSliderEvent__item__title {
-		min-height: 85px;
-		font-size: rem(18px);
-	}
-	.mainPageSliderEvent__item__desc {
-		font-size: rem(16px);
-		margin-bottom: 10px;
-	}
-	.mainPageSliderEvent__item__more {
-		font-size: rem(14px);
-		padding-right: 25px;
-		&:after {
-			width: 15px;
-			height: 15px;
-		}
-	}
-	.mainPageSliderEvent__control {
-		width: 40px;
-		height: 34px;
-		font-size: rem(12px);
-		margin-top: -17px;
-	}
-	.mainPageSliderEvent__control__prev {
-	    left: -42px;
-	}
-	.mainPageSliderEvent__control__next {
-	    right: -42px;
-	}
-	.mainPageSliderEvent__prev, 
-	.mainPageSliderEvent__next {
-	    width: 40px;
-	    height: 16px;
-	}
 
 	/* последние новости */
 	.lastNews {
@@ -2717,81 +2360,7 @@
 	
 
 
-	/* блок услуги */
 
-	.mainPageService {
-		padding: 30px 0;
-	}
-	.mainPageService__tab__item {
-		max-width: 90px;
-		padding-bottom: 15px;
-		&:before {
-			width: 90px;
-			height: 10px;
-		}
-	}
-	.mainPageService__tab__content__item.active {
-		display: block;
-	}
-	.mainPageService__tab__content__item__block {
-		width: 100%;
-		margin-bottom: 20px;
-		img {
-			display: block;
-			max-width: 280px;
-			margin: 0 auto;
-		}
-		.question__block {
-			max-width: 280px;
-			margin: 0 auto;
-		}
-	}
-
-	/* слайдер мероприятий */
-	.mainPageSliderEvent {
-		padding: 30px 0;
-	}
-	.mainPageSliderEvent__title {
-		margin-bottom: 20px;
-	}
-	.mainPageSliderEvent__wrap {
-	    max-width: 80%;
-	}
-	.mainPageSliderEvent__item__content {
-		display: block;
-	}
-	.mainPageSliderEvent__item__left {
-		width: 100%;
-		padding-top: 0;
-		margin-bottom: 20px;
-	}
-	.mainPageSliderEvent__item__right {
-		width: 100%;
-	}
-	.mainPageSlider__item__date {
-		font-size: rem(16px);
-		padding-left: 40px;
-		&:before {
-			width: 30px;
-		}
-	}
-	.mainPageSliderEvent__item__title {
-		min-height: auto;
-	}
-	.mainPageSliderEvent__control {
-		top: 25%;
-	}
-	.mainPageSliderEvent__control__prev {
-	    left: -25px;
-	}
-	.mainPageSliderEvent__control__next {
-	    right: -25px;
-	}
-	.mainPageSliderEvent__prev, 
-	.mainPageSliderEvent__next {
-	    width: 40px;
-	    height: 16px;
-	}
 
 	/* последние новости */
 	.lastNews {

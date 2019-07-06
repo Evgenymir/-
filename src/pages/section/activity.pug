@@ -1,0 +1,56 @@
+.b-activity
+    .b-container
+        .b-activity__title.b-title
+            h2 Мероприятия
+        .b-activity__slider-wrap
+            .b-activity__slider.j-slider-activity
+                .b-activity__slider-item
+                    .b-activity__slider-item-content
+                        .b-activity__slider-item-left
+                            .b-activity__slider-item-img
+                                img.j-image-polyfill(src="./img/eventImg1.jpg", alt="Картинка")
+                        .b-activity__slider-item-right
+                            .b-activity__slider-item-date
+                                p 16 <span>/</span> 08
+                            .b-activity__slider-item-title
+                                h3 Третий блок мастер-классов от итальянских специалистов индустрии моды
+                            .b-activity__slider-item-desc
+                                p Мода
+                            a.b-activity__slider-item-more(href="#") Подробнее
+                .b-activity__slider-item
+                    .b-activity__slider-item-content
+                        .b-activity__slider-item-left
+                            .b-activity__slider-item-img
+                                img.j-image-polyfill(src="./img/eventImg.png", alt="Картинка")
+                        .b-activity__slider-item-right
+                            .b-activity__slider-item-date
+                                p 16 <span>/</span> 08
+                            .b-activity__slider-item-title
+                                h3 Третий блок мастер-классов от итальянских специалистов индустрии моды
+                            .b-activity__slider-item-desc
+                                p Мода
+                            a.b-activity__slider-item-more(href="#") Подробнее
+                .b-activity__slider-item
+                    .b-activity__slider-item-content
+                        .b-activity__slider-item-left
+                            .b-activity__slider-item-img
+                                img.j-image-polyfill(src="./img/eventImg.png", alt="Картинка")
+                        .b-activity__slider-item-right
+                            .b-activity__slider-item-date
+                                p 16 <span>/</span> 08
+                            .b-activity__slider-item-title
+                                h3 Третий блок мастер-классов от итальянских специалистов индустрии моды
+                            .b-activity__slider-item-desc
+                                p Мода
+                            a.b-activity__slider-item-more(href="#") Подробнее
+ 
+            .b-activity__slider-controls
+                .b-activity__slider-control.b-activity__slider-control-prev
+                    .b-activity__slider-control-date
+                        p 11 / 08
+                    .b-activity__slider-control-img-prev
+                .b-activity__slider-control.b-activity__slider-control-next
+                    .b-activity__slider-control-date
+                        p 25 / 08
+                    .b-activity__slider-control-img-next
+        +button("#", "Все мероприятия")(class="b-activity-allEvent")
