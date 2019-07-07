@@ -1,0 +1,26 @@
+//- Миксин слафдов
+-
+mixin partnerSlide(items)
+    for item in items
+        .b-sliders__slider-item
+            img(src="./img/" + item.imgSrc, alt="Картинка")
+-;
+
+.b-sliders
+    .b-container
+        .b-sliders__title.b-title
+            h2 ПАРТНЕРЫ
+        .b-sliders__slider-wrapper
+            .b-sliders__slider.j-slider-partners
+                +partnerSlide([
+                    {'imgSrc': 'partners1.jpg'},
+                    {'imgSrc': 'partners2.jpg'},
+                    {'imgSrc': 'partners3.jpg'},
+                    {'imgSrc': 'partners4.jpg'},
+                    {'imgSrc': 'partners5.jpg'},
+                    {'imgSrc': 'partners6.jpg'},
+                    {'imgSrc': 'partners6.jpg'}
+                ])
+            .b-sliders__slider-controls
+                .b-sliders__slider-control.b-sliders__slider-prev.j-partner-prev
+                .b-sliders__slider-control.b-sliders__slider-next.j-partner-next

@@ -2,6 +2,7 @@ import objectFitImages from 'object-fit-images'; // => Полифил для к�
 import MainSlider from '../pages/section/mainSlider.js';
 import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
+import SliderPartners from '../pages/section/partners.js';
 
 window.onload = () => {
 
@@ -25,6 +26,12 @@ window.onload = () => {
 	const sliderActivityItem = document.querySelector('.j-slider-activity');
 	if(sliderActivityItem) {
 		SliderActivity();
+	}
+
+	/* Подключаем слайдер партнеры */
+	const sliderPartnersItem = document.querySelector('.j-slider-partners');
+	if(sliderPartnersItem) {
+		SliderPartners();
 	}
 
 };
