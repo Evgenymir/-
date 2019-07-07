@@ -1,0 +1,65 @@
+.b-bannerFashion {
+	@include bg();
+	text-align: center;
+	background-image: url(../img/bg/moda.jpg);
+	padding: 190px 0 140px;
+
+	@include laptop {
+		padding: 100px 0;
+	}
+
+	@include tablets-landscape {
+		padding: 80px 0;
+	}
+
+	@include tablets {
+		padding: 60px 0;
+	}
+
+	@include mobile {
+		padding: 50px 0;
+	}
+}
+.b-bannerFashion__title {
+	color: $white;
+	margin-bottom: 70px;
+
+	@include laptop {
+		margin-bottom: 50px;
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 40px;
+	}
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
+}
+.b-bannerFashion__desc {
+	max-width: 630px;
+	font-size: rem(44px);
+	color: $white;
+	line-height: 1.2;
+	margin: 0 auto;
+
+	@include laptop {
+		max-width: 400px;
+		font-size: rem(28px);
+	}
+
+	@include tablets-landscape {
+		max-width: 340px;
+		font-size: rem(24px);
+	}
+
+	@include tablets {
+		max-width: 280px;
+		font-size: rem(20px);
+	}
+
+	@include mobile {
+		max-width: 230px;
+		font-size: rem(18px);
+	}
+}
