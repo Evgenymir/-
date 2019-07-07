@@ -1,0 +1,24 @@
+.b-popup.j-popup#feedBack
+    .b-popupClose.j-close-popup
+        .b-popupClose__line
+        .b-popupClose__line
+    .b-popup__title.b-titleTwo Написать директору
+    form.b-popup__form(action="" method="POST" enctype="multipart/form-data")
+        .b-popup__form-block
+            label.b-popup__form-label
+                span ФИО *
+                input(type="text" required)
+        .b-popup__form-block
+            label.b-popup__form-label
+                span E-mail *
+                input(type="text" required)
+        .b-popup__form-textarea
+            label.b-popup__form-label
+                span Сообщение *
+                textarea(name="" required)
+        .b-popup__form-checkbox
+            label.b-labelCheckbox
+                input.b-checkbox(type="checkbox")
+                span.b-checkbox-box
+                span.b-checkbox-text Согласен с политикой конфиденциальности
+        button.b-button.b-buttonTwo.b-popup__button(type="submit") Отправить

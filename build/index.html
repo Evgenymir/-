@@ -34,7 +34,7 @@
                             </nav>
                         </div>
                         <div class="b-header__right"><a class="b-enLanguage" href="#">English</a>
-                            <div class="b-entry"><a class="b-feedBackLink openPopup" href="#feedBack"></a><a class="b-visuallyImpaired" href="#"></a><a class="b-entry__link" href="#">Вход</a></div>
+                            <div class="b-entry"><a class="b-feedBackLink j-open-popup" href="#feedBack" title="Написать директору"></a><a class="b-visuallyImpaired" href="#" Title="Версия для слабовидящих"></a><a class="b-entry__link" href="#">Вход</a></div>
                             <div class="b-burger j-burger">
                                 <div class="b-burger__line"></div>
                                 <div class="b-burger__line"></div>
@@ -486,7 +486,7 @@
                 </div>
             </div>
             <!-- Блок гос сайты-->
-            <div class="b-sliders">
+            <div class="b-sliders b-gosSites">
                 <div class="b-container">
                     <div class="b-sliders__title b-title">
                         <h2>Государственные сайты</h2>
@@ -610,7 +610,38 @@
             </div>
         </footer>
         <!-- Иконки фиксированные-->
-        <div class="b-fixedIcon"><a class="b-fixedIcon__link subscribe" href="#"></a><a class="b-fixedIcon__link interview" href="#"></a></div>
+        <div class="b-fixedIcon"><a class="b-fixedIcon__link subscribe" href="#" title="Подписаться на новости"></a><a class="b-fixedIcon__link interview" href="#" title="Проголосовать"></a></div>
+        <!-- Попап-->
+        <div class="b-popup j-popup" id="feedBack">
+            <div class="b-popupClose j-close-popup">
+                <div class="b-popupClose__line"></div>
+                <div class="b-popupClose__line"></div>
+            </div>
+            <div class="b-popup__title b-titleTwo">Написать директору</div>
+            <form class="b-popup__form" action="" method="POST" enctype="multipart/form-data">
+                <div class="b-popup__form-block">
+                    <label class="b-popup__form-label"><span>ФИО *</span>
+                        <input type="text" required>
+                    </label>
+                </div>
+                <div class="b-popup__form-block">
+                    <label class="b-popup__form-label"><span>E-mail *</span>
+                        <input type="text" required>
+                    </label>
+                </div>
+                <div class="b-popup__form-textarea">
+                    <label class="b-popup__form-label"><span>Сообщение *</span>
+                        <textarea name="" required></textarea>
+                    </label>
+                </div>
+                <div class="b-popup__form-checkbox">
+                    <label class="b-labelCheckbox">
+                        <input class="b-checkbox" type="checkbox"><span class="b-checkbox-box"></span><span class="b-checkbox-text">Согласен с политикой конфиденциальности</span>
+                    </label>
+                </div>
+                <button class="b-button b-buttonTwo b-popup__button" type="submit">Отправить</button>
+            </form>
+        </div>
         <!-- Мобильное меню-->
         <div class="b-mobileMenu j-mobileMenu">
             <div class="b-mobileMenu__close j-mobileMenu__close">
@@ -625,7 +656,7 @@
                 <li class="b-mobileMenu__item"><a class="b-mobileMenu__link" href="#">Контакты</a></li>
             </ul>
             <div class="b-mobileMenu__entry"><a class="b-enLanguage" href="#">English</a>
-                <div class="b-mobileMenu__entry-list"><a class="b-feedBackLink openPopup" href="#feedBack"></a><a class="b-visuallyImpaired" href="#"></a><a class="b-entry__link" href="#">Вход</a></div>
+                <div class="b-mobileMenu__entry-list"><a class="b-feedBackLink j-open-popup" href="#feedBack"></a><a class="b-visuallyImpaired" href="#"></a><a class="b-entry__link" href="#">Вход</a></div>
             </div>
             <div class="b-mobileMenu__iconLinks"><a href="#"><img src="./img/icon/subscribe.png" alt="icon"></a><a href="#"><img src="./img/icon/interview.png" alt="icon"></a></div>
         </div>

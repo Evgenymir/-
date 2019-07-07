@@ -1,5 +1,6 @@
 import objectFitImages from 'object-fit-images'; // => Полифил для картинок с object-fit 
 import Burger from '../components/burger/burger.js';
+import Popup from '../pages/section/popup.js';
 import MainSlider from '../pages/section/mainSlider.js';
 import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
@@ -47,6 +48,12 @@ window.onload = () => {
 	const sliderGosSitesItem = document.querySelector('.j-slider-gosSites');
 	if(sliderGosSitesItem) {
 		SliderGosSites();
+	}
+
+	/* Подключаем попапы */
+	const popupItem = document.querySelector('.j-popup');
+	if(popupItem) {
+		Popup();
 	}
 
 	/* Подключаем карту Яндекса */

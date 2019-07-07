@@ -71,32 +71,6 @@
 	    margin-bottom: 73px;
 	}
 
-	/* попапы */
-
-	.popup {
-		padding: 30px;
-	}
-		.popup__title {
-			margin-bottom: 15px;
-		}
-		.popup__form__block {
-			padding: 15px;
-		}
-		.popup__form__label {
-			font-size: rem(16px);
-			span {
-				margin-bottom: 8px;
-			}
-			textarea {
-				height: 150px;
-			}
-		}
-		.popup__form__block__textarea {
-			padding: 15px;
-		}
-		.popup__form__block__checkbox {
-			margin-bottom: 15px;
-		}
 
 	/* страница моды */
 
@@ -317,44 +291,7 @@
 	    margin-bottom: 64px;
 	}
 
-	/* попапы */
 
-	.popup {
-		max-width: 992px;
-		padding: 20px;
-	}
-		.popup__title {
-			margin-bottom: 10px;
-		}
-		.popup__form__block {
-			padding: 10px;
-		}
-		.popup__form__label {
-			font-size: rem(14px);
-			span {
-				margin-bottom: 5px;
-			}
-			input {
-				height: 30px;
-			}
-			textarea {
-				height: 120px;
-			}
-		}
-		.popup__form__block__textarea {
-			padding: 10px;
-		}
-		.popup__form__block__checkbox {
-			margin-bottom: 10px;
-		}
-	.checkbox__Box {
-		width: 20px;
-		height: 20px;
-		&:before {
-			width: 20px;
-			height: 20px;
-		}
-	}
 
 	/* страница моды */
 	
@@ -944,11 +881,7 @@
 		margin-bottom: 40px;
 	}
 
-	/* попапы */
 
-	.popup {
-		max-width: 760px;
-	}
 
 	/* страница моды */
 	
@@ -1376,40 +1309,6 @@
 	    margin-bottom: 20px;
 	}
 
-	/* попапы */
-
-	.popup {
-		max-width: 90%;
-		padding: 10px 20px;
-	}
-		.popupClose {
-			top: 10px;
-			right: 10px;
-			width: 20px;
-			height: 20px;
-		}
-			.popupClose__line {
-				height: 2px;
-			}
-		.popup__form__block {
-			padding: 5px 10px;
-			border-bottom: 0;
-		}
-		.popup__form__label {
-			span {
-				margin-bottom: 3px;
-			}
-			input {
-				height: 25px;
-			}
-			textarea {
-				height: 80px;
-				padding: 5px;
-			}
-		}
-		.popup__form__block__textarea {
-			padding: 5px 10px;
-		}
 
 	/* страница моды */
 	
@@ -1957,37 +1856,7 @@
 	}
 
 
-	/* попапы */
 
-	.popup {
-		padding: 10px;
-	}
-	.popup__form__block {
-		padding: 5px 0;
-	}
-	.popup__form__label {
-		input {
-			height: 20px;
-		}
-		textarea {
-			height: 50px;
-		}
-	}
-	.popup__form__block__textarea {
-		padding: 5px 0;
-	}
-	.checkbox__Box {
-	    width: 15px;
-	    height: 15px;
-	    margin-right: 5px;
-	    &:before {
-	    	width: 15px;
-	    	height: 15px;
-	    }
-	}
-	.checkbox__text {
-		font-size: rem(14px);
-	}
 
 	/* страница моды */
 	
@@ -2397,29 +2266,5 @@
 	.filterForm__date__icon input {
 	    width: 100px;
 	    padding: 0 5px;
-	}
-}
-
-@media screen and (max-width: 992px) and (orientation: landscape) {
-	.popup__title {
-		font-size: rem(18px);
-	}
-	.popup__form__block {
-		padding: 0 10px;
-	}
-	.popup__form__label {
-		font-size: rem(12px);
-		span {
-			margin-bottom: 0;
-		}
-	}
-	.checkbox__Box {
-	    width: 15px;
-	    height: 15px;
-	    margin-right: 5px;
-	    &:before {
-	    	width: 15px;
-	    	height: 15px;
-	    }
 	}
 }

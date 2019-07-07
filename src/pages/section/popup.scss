@@ -1,0 +1,322 @@
+.b-popup {
+	position: fixed;
+	top: 50%;
+	left: -120%;
+	z-index: 10;
+	width: 100%;
+	max-width: 1070px;
+	background-color: #f8f8f8;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	overflow-y: auto;
+	transition: left ease 0.5s;
+
+	&.active {
+		left: 50%;
+	}
+
+	@include laptop-wide {
+		padding: 30px;
+	}
+
+	@include laptop {
+		max-width: 992px;
+		padding: 20px;
+	}
+
+	@include tablets-landscape {
+		max-width: 760px;
+	}
+
+	@include tablets {
+		max-width: 90%;
+		padding: 10px 20px;
+	}
+
+	@include mobile {
+		padding: 10px;
+	}
+}
+
+.b-popupClose {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+
+	@include tablets {
+		top: 10px;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.b-popupClose__line {
+	width: 100%;
+	height: 3px;
+	background-color: $text;
+	position: absolute;
+	top: 8px;
+
+	&:first-child {
+		transform: rotate(45deg);
+	}
+
+	&:last-child {
+		transform: rotate(-45deg);
+	}
+
+	@include tablets {
+		height: 2px;
+	}
+}
+
+.b-popup__title {
+	@include inlineBlock();
+	line-height: 1;
+	margin-bottom: 2vh;
+
+	@include laptop-wide {
+		margin-bottom: 15px;
+	}
+
+	@include laptop {
+		margin-bottom: 10px;
+	}
+
+	@media screen and (max-width: 992px) and (orientation: landscape) {
+		font-size: rem(18px);
+	}
+}
+
+.b-popup__form-block {
+	border-bottom: 1px solid #e3e3e3;
+	padding: 20px;
+
+	@include laptop-wide {
+		padding: 15px;
+	}
+
+	@include laptop {
+		padding: 10px;
+	}
+
+	@include tablets {
+		padding: 5px 10px;
+		border-bottom: 0;
+	}
+
+	@include mobile {
+		padding: 5px 0;
+	}
+
+	@media screen and (max-width: 992px) and (orientation: landscape) {
+		padding: 0 10px;
+	}
+}
+
+.b-popup__form-label {
+	font-size: rem(16px);
+
+	span {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	input {
+		width: 100%;
+		height: 38px;
+		border: 1px solid #e3e3e3;
+		border-radius: 5px;
+		padding: 0 15px;
+	}
+
+	textarea {
+		width: 100%;
+		height: 170px;
+		border: 1px solid #e3e3e3;
+		border-radius: 5px;
+		padding: 15px;
+		resize: none;
+	}
+
+	@include laptop-wide {
+		font-size: rem(16px);
+
+		span {
+			margin-bottom: 8px;
+		}
+
+		textarea {
+			height: 150px;
+		}
+	}
+
+	@include laptop {
+		font-size: rem(14px);
+
+		span {
+			margin-bottom: 5px;
+		}
+
+		input {
+			height: 30px;
+		}
+
+		textarea {
+			height: 120px;
+		}
+	}
+
+	@include tablets {
+		span {
+			margin-bottom: 3px;
+		}
+
+		input {
+			height: 25px;
+		}
+
+		textarea {
+			height: 80px;
+			padding: 5px;
+		}
+	}
+
+	@include mobile {
+		input {
+			height: 20px;
+		}
+
+		textarea {
+			height: 50px;
+		}
+	}
+
+	@media screen and (max-width: 992px) and (orientation: landscape) {
+		font-size: rem(12px);
+
+		span {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.b-popup__form-textarea {
+	padding: 2vh;
+
+	@include laptop-wide {
+		padding: 15px;
+	}
+
+	@include laptop {
+		padding: 10px;
+	}
+
+	@include tablets {
+		padding: 5px 10px;
+	}
+
+	@include mobile {
+		padding: 5px 0;
+	}
+}
+
+.b-popup__form-checkbox {
+	margin-bottom: 2.5vh;
+
+	@include laptop-wide {
+		margin-bottom: 15px;
+	}
+
+	@include laptop {
+		margin-bottom: 10px;
+	}
+}
+
+.b-labelCheckbox {
+	cursor: pointer;
+}
+
+.b-checkbox {
+	display: none;
+
+	&:checked + .b-checkbox-box {
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.b-checkbox-box {
+	position: relative;
+	@include inlineBlock(middle);
+	width: 26px;
+	height: 26px;
+	border: 2px solid #e3e3e3;
+	border-radius: 3px;
+	background-color: $white;
+	margin-right: 10px;
+
+	&:before {
+		@include bg(contain);
+		content: "";
+	    width: 26px;
+	    height: 26px;
+	    background-image: url(../img/icon/checkbox_a.png);
+	    border-radius: 3px;
+	    position: absolute;
+	    top: -2px;
+	    left: -2px;
+	    visibility: hidden;
+	    opacity: 0;
+	    transition: all ease 0.5s;
+	}
+
+	@include laptop {
+		width: 20px;
+		height: 20px;
+
+		&:before {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	@include mobile {
+		width: 15px;
+	    height: 15px;
+	    margin-right: 5px;
+
+	    &:before {
+	    	width: 15px;
+	    	height: 15px;
+	    }
+	}
+
+	@media screen and (max-width: 992px) and (orientation: landscape) {
+		width: 15px;
+	    height: 15px;
+	    margin-right: 5px;
+
+	    &:before {
+	    	width: 15px;
+	    	height: 15px;
+	    }
+	}
+}
+
+.b-checkbox-text {
+	@include inlineBlock(middle);
+	@include plumb(light);
+	font-size: rem(16px);
+	line-height: 1;
+
+	@include mobile {
+		font-size: rem(14px);
+	}
+}

@@ -1,0 +1,11 @@
+.b-gosSites {
+	padding-top: 60px;
+
+	@include tablets {
+		padding-top: 40px;
+	}
+
+	@include mobile {
+		padding-top: 30px;
+	}
+}
