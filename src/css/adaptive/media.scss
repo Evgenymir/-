@@ -56,10 +56,6 @@
 
 
 	
-	/* последние новости */
-	.lastNews__tab__content__block__text__title {
-		font-size: rem(22px);
-	}
 	/*слайдер партнеры и гос сайты */
 	.partners__sliderWrap,
 	.gosSiteBlock__sliderWrap {
@@ -293,37 +289,7 @@
 
 	
 
-	/* последние новости */
-	.lastNews {
-		padding-bottom: 50px;
-	}
-	.lastNews__title__wrap {
-		margin-bottom: 20px;
-	}
-	.lastNews__tab__content__block__item__img {
-		height: 230px;
-	}
-	.lastNews__tab__content__block__text {
-		max-width: 290px;
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-	.lastNews__tab__content__block__text__date {
-		font-size: rem(16px);
-		margin-bottom: 30px;
-	}
-	.lastNews__tab__content__block__text__title {
-		font-size: rem(18px);
-		height: 94px;
-		margin-bottom: 15px;
-	}
-	.lastNews__tab__content__block__text__desc {
-		font-size: rem(14px);
-	}
-	.lastNews__tab__content__block__text__link {
-		width: 20px;
-		height: 20px;
-	}
+	
 
 	/* баннер индустрии моды */
 	.fashionIndustryBanner {
@@ -946,38 +912,7 @@
 
 
 
-	/* последние новости */
-	.lastNews {
-		padding: 50px 0;
-	}
-	.mainPageService__tabsWrap {
-		padding-top: 15px;
-	}
-	.lastNews__tab__content__block__item__img {
-	    height: 205px;
-	}
-	.lastNews__tab__content__block__text {
-		max-width: 220px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.lastNews__tab__content__block__text__date {
-		font-size: rem(14px);
-		margin-bottom: 20px;
-	}
-	.lastNews__tab__content__block__text__title {
-		font-size: rem(16px);
-		height: 96px;
-		margin-bottom: 10px;
-	}
-	.lastNews__tab__content__block__text__desc {
-		border-radius: 12px;
-    	padding: 5px 10px;
-	}
-	.lastNews__tab__content__block__text__link {
-		width: 20px;
-		height: 20px;
-	}
+	
 	
 	/* баннер индустрии моды */
 	.fashionIndustryBanner {
@@ -1660,25 +1595,7 @@
 
 
 
-	/* последние новости */
-	.lastNews {
-		padding: 40px 0;
-	}
-	.mainPageService__tabsWrap {
-		padding-top: 10px;
-	}
-	.lastNews__tab__content__block {
-		&.active {
-			display: block;
-		}
-	}
-	.lastNews__tab__content__block__item {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	.lastNews__tab__content__block__text {
-		max-width: 55%;
-	}
+
 
 	/* баннер индустрии моды */
 	.fashionIndustryBanner {
@@ -2362,50 +2279,7 @@
 
 
 
-	/* последние новости */
-	.lastNews {
-		padding: 30px 0;
-	}
-	.lastNews__tab__content__block__item {
-		margin-bottom: 10px;
-	}
-	.lastNews__tab__content__block__text {
-		max-width: 55%;
-	}
-	.lastNews__tabsWrap .mainPageService__tab__item:nth-child(1):before,
-	.lastNews__tabsWrap .mainPageService__tab__item.active:nth-child(1):before {
-		left: 3%;
-	}
-	.lastNews__tabsWrap .mainPageService__tab__item:nth-child(2):before,
-	.lastNews__tabsWrap .mainPageService__tab__item.active:nth-child(2):before {
-	    left: -2%;
-	}
-	.lastNews__tabsWrap .mainPageService__tab__item:nth-child(3):before,
-	.lastNews__tabsWrap .mainPageService__tab__item.active:nth-child(3):before {
-	    left: 0%;
-	}
-	.lastNews__tab__content__block__item__img {
-	    height: 180px;
-	}
-	.lastNews__tab__content__block__text {
-		position: relative;
-		max-width: 100%;
-		top: auto;
-		right: auto;
-	}
-	.lastNews__tab__content__block__text__date {
-		margin-bottom: 10px;
-	}
-	.lastNews__tab__content__block__text__title {
-		height: auto;
-		padding-bottom: 0;
-		overflow: visible;
-	}
-	.lastNews__tab__content__block__text__linkWrap {
-		position: absolute;
-		bottom: 15px;
-		right: 10px;
-	}
+
 
 	/* баннер индустрии моды */
 	.fashionIndustryBanner {

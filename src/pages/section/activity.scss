@@ -122,13 +122,6 @@
 	border-radius: 50%;
 	overflow: hidden;
 
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		font-family: 'object-fit: cover';
-	}
-
 	@include laptop-wide {
 		width: 350px;
 		height: 350px;

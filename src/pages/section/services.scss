@@ -24,6 +24,10 @@
 .b-tabs-wrapper {
 	padding-top: 30px;
 	margin-bottom: 30px;
+
+	@include tablets-landscape {
+		padding-top: 15px;
+	}
 }
 
 .b-tabs {

@@ -1,0 +1,77 @@
+//- Миксин для вывода карточек новости
+-
+mixin lastNews(items)
+    each news in items
+        .b-lastNews__content-news
+            .b-lastNews__content-news-img
+                img.j-image-polyfill(src="./img/" + news.imgSrc, alt="Картинка")
+            .b-lastNews__content-news-text
+                .b-lastNews__content-news-date #{news.date}
+                a.b-lastNews__content-news-title(href="#") #{news.text}
+                .b-lastNews__content-news-desc #{news.section}
+                .b-lastNews__content-news-linkWrap
+                    a.b-lastNews__content-news-link(href="#")
+-;
+
+.b-lastNews
+    .b-container
+        .b-lastNews__title.b-title
+            h2 Последние новости
+        .b-tabs-wrapper.b-lastNews-tabs-wrapper.j-tabs
+            .b-tabs
+                .b-tabs__item.active
+                    a.b-tabs__link.j-tab-link(href="#") Новости центра
+                .b-tabs__item
+                    a.b-tabs__link.j-tab-link(href="#") Новости бизнеса
+                .b-tabs__item
+                    a.b-tabs__link.j-tab-link(href="#") Анонсы мероприятий
+        
+
+            .b-tabs__content.b-lastNews__content
+                .b-tabs__content-item.b-lastNews__content-item.active
+                    +lastNews([
+                        {
+                            'imgSrc': 'newsImg.jpg',
+                            'date': '01/08/18',
+                            'text': '1 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Общие новости'
+                        },
+                        {
+                            'imgSrc': 'newsImg2.jpg',
+                            'date': '01/08/18',
+                            'text': '1 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Общие новости'
+                        }
+                    ])
+
+                .b-tabs__content-item.b-lastNews__content-item
+                    +lastNews([
+                        {
+                            'imgSrc': 'newsImg2.jpg',
+                            'date': '01/08/18',
+                            'text': '2 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Бизнес новости'
+                        },
+                        {
+                            'imgSrc': 'newsImg.jpg',
+                            'date': '01/08/18',
+                            'text': '2 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Бизнес новости'
+                        }
+                    ])
+                .b-tabs__content-item.b-lastNews__content-item
+                    +lastNews([
+                        {
+                            'imgSrc': 'newsImg.jpg',
+                            'date': '01/08/18',
+                            'text': '3 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Анонсы'
+                        },
+                        {
+                            'imgSrc': 'newsImg2.jpg',
+                            'date': '01/08/18',
+                            'text': '3 Запущена бесплатная услуга по разработке веб-сайтов для бизнеса',
+                            'section': 'Анонсы'
+                        }
+                    ])
+        +button("#", "Все новости")(class="b-lastNews__allNews b-buttonTwo")
