@@ -1,3 +1,16 @@
 .header {
 	background-color: $white;
 }
+
+.footer {
+	background-color: $footerBg;
+	padding: 100px 0 50px;
+
+	@include tablets-landscape {
+		padding: 50px 0 30px;
+	}
+
+	@include mobile {
+		padding: 30px 0;
+	}
+}

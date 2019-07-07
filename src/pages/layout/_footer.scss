@@ -1,0 +1,292 @@
+.b-footer-menu {
+	@include flex(center);
+	margin-bottom: 90px;
+	margin-left: -0.6%;
+
+	@include tablets-landscape {
+		margin-bottom: 30px;
+	}
+}
+
+.b-footer-menu__item {
+	width: 15.6%;
+	margin-left: 1%;
+
+	@include laptop {
+		width: 32%;
+		margin-bottom: 20px;
+	}
+
+	@include tablets {
+		width: 49%;
+	}
+}
+
+.b-footer-menu__title {
+	min-height: 50px;
+	@include plumb(bold);
+	font-size: rem(16px);
+	color: $white;
+	text-transform: uppercase;
+	line-height: 1;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #979797;
+	margin-bottom: 20px;
+
+	@include laptop-wide {
+		min-height: 60px;
+		font-size: rem(14px);
+		line-height: 1.4;
+	}
+
+	@include tablets-landscape {
+		min-height: 50px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	@include mobile {
+		font-size: rem(10px);
+		min-height: 33px;
+	    padding-bottom: 5px;
+	    margin-bottom: 10px;
+	}
+}
+
+.b-footer-menu__list {
+	list-style-type: none;
+}
+
+.b-footer-menu__list-item {
+	margin-bottom: 15px;
+
+	@include tablets-landscape {
+		margin-bottom: 8px;
+	}
+}
+
+.b-footer-menu__list-link {
+	@include plumb(light);
+	font-size: rem(14px);
+	color: #979797;
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.b-footer-info {
+	@include flex();
+	color: $white;
+	margin-bottom: 50px;
+
+	@include tablets {
+		display: block;
+	}
+}
+
+.b-footer-info__left {
+	width: 50%;
+
+	@include tablets-landscape {
+		width: 40%;
+	}
+
+	@include tablets {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.b-footer-info__right {
+	width: 50%;
+
+	@include tablets-landscape {
+		width: 60%;
+		font-size: rem(12px);
+	}
+
+	@include tablets {
+		width: 100%;
+	}
+}
+
+.b-footer-info__logo {
+	width: 64%;
+	@include inlineBlock();
+	@include plumb(light);
+	font-size: rem(12px);
+
+	img {
+		float: left;
+		margin-right: 4%;
+	}
+
+	@include laptop {
+		width: 75%;
+	}
+
+	@include tablets-landscape {
+		width: 100%;
+
+		img {
+			width: 37px;
+		}
+	}
+
+	@include tablets {
+		img {
+			width: 70px;
+		}
+	}
+
+	@include mobile {
+		text-align: center;
+
+		img {
+		    display: none;
+		}
+	}
+}
+
+.b-footer-info__img {
+	width: 35%;
+	@include inlineBlock();
+	text-align: center;
+
+	@include laptop {
+		width: 23%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	@include tablets-landscape {
+		display: none;
+	}
+}
+
+.b-footer-info__workingHours {
+	@include inlineBlock();
+	width: 48%;
+	padding-left: 16%;
+
+	@include laptop {
+		width: 40%;
+	    padding-left: 5%;
+	}
+
+	@include tablets {
+		padding-left: 0;
+	}
+
+	@include mobile {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+
+.b-footer-info__address {
+	@include inlineBlock();
+	width: 48%;
+
+	@include laptop {
+		width: 57%;
+	}
+
+	@include mobile {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.b-footer-info__social {
+	padding-top: 20px;
+}
+
+.b-footer-info__social-link {
+	@include bg(contain);
+	@include inlineBlock();
+	width: 28px;
+	height: 28px;
+	margin-left: 12px;
+	transition: all ease 0.3s;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&.vk {
+		background-image: url(../img/icon/vk.png);
+	}
+
+	&.fb {
+		background-image: url(../img/icon/fb.png);
+	}
+
+	&.inst {
+		background-image: url(../img/icon/inst.png);
+	}
+
+	&.odn {
+		background-image: url(../img/icon/odn.png);
+	}
+
+	&.ya {
+		background-image: url(../img/icon/ya.png);
+	}
+
+	&.mail {
+		background-image: url(../img/icon/mail.png);
+	}
+
+	&.google {
+		background-image: url(../img/icon/google.png);
+	}
+
+	&:hover {
+		&.vk {
+			background-image: url(../img/icon/vkColor.png);
+		}
+
+		&.fb {
+			background-image: url(../img/icon/fbColor.png);
+		}
+
+		&.inst {
+			background-image: url(../img/icon/instColor.png);
+		}
+
+		&.odn {
+			background-image: url(../img/icon/odnColor.png);
+		}
+
+		&.ya {
+			background-image: url(../img/icon/yaColor.png);
+		}
+
+		&.mail {
+			background-image: url(../img/icon/mailColor.png);
+		}
+
+		&.google {
+			background-image: url(../img/icon/googleColor.png);
+		}
+	}
+
+	@include laptop {
+		margin-left: 5px;
+	}
+}
+
+.b-footer__copyright {
+	font-size: rem(12px);
+	color: $white;
+	text-align: center;
+}

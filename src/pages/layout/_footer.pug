@@ -1,0 +1,109 @@
+//- Миксин список ссылок
+-
+mixin footerLinks(items)
+    ul.b-footer-menu__list
+        for item in items
+            li.b-footer-menu__list-item
+                a.b-footer-menu__list-link(href="#") #{item.text}
+-;
+
+.b-container
+    nav.b-footer-menu
+        .b-footer-menu__item
+            .b-footer-menu__title Производственная кооперация
+            +footerLinks([
+                {'text': 'Предложения предприятий'},
+                {'text': 'Каталог предприятий'},
+                {'text': 'Заказы предприятий'},
+                {'text': 'Аренда кооперации'},
+                {'text': 'Мероприятия кооперации'},
+                {'text': 'Отзывы'},
+                {'text': 'Контакты'}
+            ])
+                
+        .b-footer-menu__item
+            .b-footer-menu__title Поддержка социального предпринимательства
+            +footerLinks([
+                {'text': 'Доступная среда'},
+                {'text': 'О центре'},
+                {'text': 'Новости'},
+                {'text': 'Предприниматели'},
+                {'text': 'Успешные практики'},
+                {'text': 'Полезная информация'},
+                {'text': 'Мероприятия'}
+            ])
+            
+        .b-footer-menu__item
+            .b-footer-menu__title Центр индустрии моды
+            +footerLinks([
+                {'text': 'Каталог дизайнеров'},
+                {'text': 'Каталог швейных предприятий'},
+                {'text': 'Новости'},
+                {'text': 'Мероприятия'},
+                {'text': 'Контакты'}
+            ])
+
+        .b-footer-menu__item
+            .b-footer-menu__title Ремесленичество
+            +footerLinks([
+                {'text': 'Каталог ремесленников'},
+                {'text': 'Каталог предприятий'},
+                {'text': 'Мероприятия'},
+                {'text': 'Отзывы'}
+            ])
+
+        .b-footer-menu__item
+            .b-footer-menu__title Экспорт
+            +footerLinks([
+                {'text': 'Продвижени на международные рынки'},
+                {'text': 'Справочные материалы'},
+                {'text': 'Сопровождение проектов'},
+                {'text': 'Субсидии для экспортеров'},
+                {'text': 'Переводы'},
+                {'text': 'Образовательные проекты'},
+                {'text': 'Мероприятия'},
+                {'text': 'Кредитование и страхование'},
+                {'text': 'Контакты'}
+            ])
+
+        .b-footer-menu__item
+            .b-footer-menu__title Акселератор
+            +footerLinks([
+                {'text': 'Акселератор ЦРПП'},
+                {'text': 'Истории успеха'},
+                {'text': 'Ежегодный фестиваль'},
+                {'text': 'Консультации начинающим предпринимателям'},
+                {'text': 'Экспертиза бизнес идеи'},
+                {'text': 'Обучение, мастер классы'},
+                {'text': 'Финансирование'}
+            ])
+
+    .b-footer-info
+        .b-footer-info__left
+            .b-footer-info__logo
+                img(src="./img/logoPiterBig.png" alt="картинка")
+                span Правительство Санкт-Петербурга <br />Комитет по развитию предпринимательства<br /> и потребительского рынка Санкт-Петербурга<br /> Санкт-Петербургское государственное бюджетное учреждение<br /> «Центр развития и поддержки предпринимательства»
+            .b-footer-info__img
+                img(src="./img/myBusiness.png" alt="картинка")
+
+        .b-footer-info__right
+            .b-footer-info__workingHours
+                p Часы работы:
+                p пн­-чт: с 9:00 до 18:00
+                p пт: с 9:00 до 17:00
+                p обед с 13:00 до 14:00
+            .b-footer-info__address
+                p г. Санкт­-Петербург, Полюстровский пр-т 61
+                p Единый Центр Предпринимательства
+                p +7 (812) 372-52-90
+                p info@crpp.ru
+                .b-footer-info__social
+                    a.b-footer-info__social-link.vk(href="#")
+                    a.b-footer-info__social-link.fb(href="#")
+                    a.b-footer-info__social-link.inst(href="#")
+                    a.b-footer-info__social-link.odn(href="#")
+                    a.b-footer-info__social-link.ya(href="#")
+                    a.b-footer-info__social-link.mail(href="#")
+                    a.b-footer-info__social-link.google(href="#")
+    .b-footer__copyright
+        p 2018 &copy; СПб ГБУ «ЦРПП»
