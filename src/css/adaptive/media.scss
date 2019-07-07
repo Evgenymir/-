@@ -6,11 +6,7 @@
 
 
 
-	/*слайдер партнеры */
-	.partners__sliderWrap {
-		max-width: 1270px;
-		margin: 0 auto;
-	}
+
 
 	/* слайдер гос сайты */
 	.gosSiteBlock__sliderWrap {
@@ -53,16 +49,12 @@
 
 
 	
-	/*слайдер партнеры и гос сайты */
-	.partners__sliderWrap,
+	/* гос сайты */
 	.gosSiteBlock__sliderWrap {
 		max-width: 1125px;
 		margin: 0 auto;
 	}
-	/* стартап баннер */
-	.startUpBanner {
-		height: 260px;
-	}
+
 
 	/* карта */
 	.map {
@@ -290,20 +282,17 @@
 
 
 	/*слайдер партнеры и гос сайты */
-	.partners__sliderWrap,
+
 	.gosSiteBlock__sliderWrap {
 		max-width: 860px;
 	}
-	.partners__slider__control,
+
 	.gosSiteBlock__slider__control {
 		width: 30px;
 		height: 30px;
 		margin-top: -15px;
 	}
-	/* стартап баннер */
-	.startUpBanner {
-		height: 200px;
-	}
+
 	/* карта */
 	.mapBlock__filter__form {
 		max-width: 500px;
@@ -878,25 +867,22 @@
 
 
 	/*слайдер партнеры и гос сайты */
-	.partners__sliderWrap,
+
 	.gosSiteBlock__sliderWrap {
 		max-width: 660px;
 	}
-	.partners__title,
+
 	.gosSiteBlock__title {
 	    margin-bottom: 40px;
 	}
-	.partners__slider__control,
+
 	.gosSiteBlock__slider__control {
 		width: 20px;
 		height: 20px;
 		margin-top: -10px;
 		border-width: 2px;
 	}
-	/* стартап баннер */
-	.startUpBanner {
-		height: 160px;
-	}
+
 	/* карта */
 	.mapBlock__title {
 	    padding: 30px 0;
@@ -1528,25 +1514,20 @@
 
 
 	/*слайдер партнеры и гос сайты */
-	.partners {
-		padding: 15px 0 40px;
-	}
+
 	.gosSiteBlock {
 		padding: 40px 0;
 	}
-	.partners__sliderWrap,
+	
 	.gosSiteBlock__sliderWrap {
 		max-width: 400px;
 	}
-	.partners__title,
+	
 	.gosSiteBlock__title {
 	    margin-bottom: 30px;
 	}
 
-	/* стартап баннер */
-	.startUpBanner {
-		height: 120px;
-	}
+
 	/* карта */
 	.mapBlock__title {
 	    padding: 20px 0;
@@ -2163,12 +2144,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
-	/* стартап баннер */
-	.startUpBanner {
-		height: 100px;
-	}
-}
+
 
 @media screen and (max-width: 480px) {
 
@@ -2187,24 +2163,21 @@
 
 	/*слайдер партнеры и гос сайты */
 	.partners {
-		padding: 0px 0 30px;
+		
 	}
 	.gosSiteBlock {
 		padding: 30px 0;
 	}
-	.partners__sliderWrap,
+	
 	.gosSiteBlock__sliderWrap {
 		max-width: 89%;
 	}
-	.partners__title,
+	
 	.gosSiteBlock__title {
 	    margin-bottom: 20px;
 	}
 
-	/* стартап баннер */
-	.startUpBanner {
-		height: 77px;
-	}
+
 	/* карта */
 	.mapBlock__filter__form {
 		max-width: 100%;
