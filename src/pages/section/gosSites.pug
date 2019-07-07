@@ -1,0 +1,26 @@
+//- Миксин слайдов
+-
+mixin gosSlide(items)
+    for item in items
+        .b-sliders__slider-item
+            img(src="./img/" + item.imgSrc, alt="Картинка")
+-;
+
+.b-sliders
+    .b-container
+        .b-sliders__title.b-title
+            h2 Государственные сайты
+        .b-sliders__slider-wrapper
+            .b-sliders__slider.j-slider-gosSites
+                +gosSlide([
+                    {'imgSrc': 'gosSite.jpg'},
+                    {'imgSrc': 'gosSite2.jpg'},
+                    {'imgSrc': 'gosSite3.jpg'},
+                    {'imgSrc': 'gosSite4.jpg'},
+                    {'imgSrc': 'gosSite5.jpg'},
+                    {'imgSrc': 'gosSite5.jpg'},
+                    {'imgSrc': 'gosSite5.jpg'}
+                ])
+            .b-sliders__slider-controls
+                .b-sliders__slider-control.b-sliders__slider-prev.j-gosSites-prev
+                .b-sliders__slider-control.b-sliders__slider-next.j-gosSites-next

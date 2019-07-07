@@ -3,6 +3,7 @@ import MainSlider from '../pages/section/mainSlider.js';
 import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
 import SliderPartners from '../pages/section/partners.js';
+import SliderGosSites from '../pages/section/gosSites.js';
 import Map from '../components/map/map.js';
 
 window.onload = () => {
@@ -33,6 +34,12 @@ window.onload = () => {
 	const sliderPartnersItem = document.querySelector('.j-slider-partners');
 	if(sliderPartnersItem) {
 		SliderPartners();
+	}
+
+	/* Подключаем слайдер гос сайты */
+	const sliderGosSitesItem = document.querySelector('.j-slider-gosSites');
+	if(sliderGosSitesItem) {
+		SliderGosSites();
 	}
 
 	/* Подключаем карту Яндекса */
