@@ -1,0 +1,167 @@
+.b-gallery {
+	background-color: $white;
+	padding: 60px 0 60px;
+
+	@include laptop {
+		padding: 50px 0 20px;
+	}
+
+	@include mobile {
+		padding-top: 30px;
+	}
+}
+
+.b-gallery__title {
+	position: relative;
+	min-height: 113px;
+	padding-left: 45px;
+	margin-bottom: 35px;
+
+	&:before {
+		content: "";
+		width: 28px;
+		height: 100%;
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	@include fullhd {
+		min-height: 90px;
+	}
+
+	@include laptop {
+		min-height: 65px;
+		padding-left: 30px;
+
+		&:before {
+			width: 20px;
+		}
+	}
+
+	@include tablets-landscape {
+		min-height: 50px;
+		padding-left: 20px;
+
+		&:before {
+			width: 10px;
+		}
+	}
+
+	@include tablets {
+		min-height: 35px;
+	}
+}
+
+.b-gallery__list {
+	@include flex();
+	margin-bottom: 35px;
+	margin-left: -1%;
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
+
+	@include mobile {
+		margin-bottom: 20px;
+		margin-left: 0;
+	}
+}
+
+.b-gallery__item {
+	width: 24%;
+	font-size: rem(20px);
+	line-height: 1.1;
+	margin-left: 1%;
+
+	@include laptop {
+		font-size: rem(18px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(16px);
+	}
+
+	@include tablets {
+		width: 49%;
+		margin-bottom: 15px;
+	}
+
+	@include mobile {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+.b-gallery__item-img {
+	display: block;
+	width: 100%;
+	height: 225px;
+	margin-bottom: 10px;
+
+	@include laptop {
+		height: 150px;
+	}
+
+	@include tablets-landscape {
+		height: 120px;
+	}
+
+	@include tablets {
+		height: 140px;
+	}
+
+	@include mobile {
+		height: 50vw;
+	}
+}
+
+.b-gallery__item-video {
+	display: block;
+	width: 100%;
+	height: 225px;
+	margin-bottom: 10px;
+
+	@include laptop {
+		height: 150px;
+	}
+
+	@include tablets-landscape {
+		height: 120px;
+	}
+
+	@include tablets {
+		height: 140px;
+	}
+
+	@include mobile {
+		height: 50vw;
+	}
+}
+
+.b-gallery__item-date {
+	@include plumb(light);
+	margin-bottom: 5px;
+}
+
+.b-gallery__item-title {
+	a {
+		color: $text;
+		text-decoration: none;
+	}
+}
+
+.b-gallery__button-wrapper {
+	text-align: right;
+	margin-bottom: 40px;
+
+	@include laptop {
+		margin-bottom: 30px;
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 20px;
+	}
+}

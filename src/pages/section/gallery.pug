@@ -1,0 +1,85 @@
+//- Миксин фото
+-
+mixin fotoItem(items)
+    for item in items
+        .b-gallery__item
+            a.b-gallery__item-img(href="#")
+                img.j-image-polyfill(src="./img/" + item.imgSrc, alt="Картинка")
+            .b-gallery__item-date
+                p #{item.date}
+            .b-gallery__item-title
+                a(href="#") #{item.text}
+-;
+
+//- Миксин видео
+-
+mixin videoItem(items)
+    for item in items
+        .b-gallery__item
+            a.b-gallery__item-video(href="#")
+                img.j-image-polyfill(src="./img/" + item.imgSrc, alt="Картинка")
+            .b-gallery__item-date
+                p #{item.date}
+            .b-gallery__item-title
+                a(href="#") #{item.text}
+-;
+
+.b-gallery
+    .b-container
+        .b-gallery__title.b-title
+            h2 Фотогалерея
+        .b-gallery__list
+            +fotoItem([
+                {
+                    'imgSrc': 'newsImg3.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер один'
+                },
+                {
+                    'imgSrc': 'newsImg4.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер два'
+                },
+                {
+                    'imgSrc': 'newsImg5.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер три'
+                },
+                {
+                    'imgSrc': 'newsImg3.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер четыре'
+                }
+            ])
+
+        .b-gallery__button-wrapper
+            +button("#", "Перейти в галерею")(class="b-gallery__button b-buttonTwo")
+
+        .b-gallery__title.b-title
+            h2 Видео галерея
+        .b-gallery__list
+            +videoItem([
+                {
+                    'imgSrc': 'videoImg.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер один'
+                },
+                {
+                    'imgSrc': 'videoImg.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер два'
+                },
+                {
+                    'imgSrc': 'videoImg.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер три'
+                },
+                {
+                    'imgSrc': 'videoImg.jpg',
+                    'date': '01/02/18',
+                    'text': 'Наименование номер четыре'
+                }
+            ])
+            
+        .b-gallery__button-wrapper
+            +button("#", "Перейти в галерею")(class="b-gallery__button b-buttonTwo")

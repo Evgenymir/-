@@ -5,10 +5,7 @@
 
 
 
-	/* блок фото-видео галереи */
-	.mainPageGallery__title {
-		min-height: 90px;
-	}
+
 	/*слайдер партнеры */
 	.partners__sliderWrap {
 		max-width: 1270px;
@@ -291,28 +288,7 @@
 
 	
 
-	/* фото и видео галерея */
-	
-	.mainPageGallery {
-		padding: 50px 0 20px;
-	}
-	.mainPageGallery__title {
-		min-height: 65px;
-		padding-left: 30px;
-		&:before {
-			width: 20px;
-		}
-	}
-	.mainPageGallery__item {
-		font-size: rem(18px);
-	}
-	.mainPageGallery__item__img,
-	.mainPageGallery__item__video {
-		height: 150px;
-	}
-	.mainPageGallery__buttonWrap {
-		margin-bottom: 30px;
-	}
+
 	/*слайдер партнеры и гос сайты */
 	.partners__sliderWrap,
 	.gosSiteBlock__sliderWrap {
@@ -899,25 +875,7 @@
 
 
 
-	/* фото и видео галерея */
-	
-	.mainPageGallery__title {
-		min-height: 50px;
-		padding-left: 20px;
-		&:before {
-			width: 10px;
-		}
-	}
-	.mainPageGallery__item {
-		font-size: rem(16px);
-	}
-	.mainPageGallery__item__img,
-	.mainPageGallery__item__video {
-		height: 120px;
-	}
-	.mainPageGallery__buttonWrap {
-		margin-bottom: 20px;
-	}
+
 
 	/*слайдер партнеры и гос сайты */
 	.partners__sliderWrap,
@@ -1568,22 +1526,6 @@
 
 
 
-	/* фото и видео галерея */
-	
-	.mainPageGallery__block {
-		margin-bottom: 20px;
-	}
-	.mainPageGallery__title {
-		min-height: 35px;
-	}
-	.mainPageGallery__item {
-		width: 49%;
-		margin-bottom: 15px;
-	}
-	.mainPageGallery__item__img,
-	.mainPageGallery__item__video {
-		height: 140px;
-	}
 
 	/*слайдер партнеры и гос сайты */
 	.partners {
@@ -2241,25 +2183,7 @@
 
 
 
-	
-	/* фото и видео галерея */
-	
-	.mainPageGallery {
-		padding-top: 30px;
-	}
-	.mainPageGallery__block {
-		margin-bottom: 20px;
-		margin-left: 0;
-	}
-	.mainPageGallery__item {
-		width: 100%;
-		margin-left: 0;
-		margin-bottom: 10px;
-	}
-	.mainPageGallery__item__img,
-	.mainPageGallery__item__video {
-		height: 140px;
-	}
+
 
 	/*слайдер партнеры и гос сайты */
 	.partners {
