@@ -27,6 +27,8 @@ $footerBg: #363636;
 @import "../components/burger/burger";
 @import "../components/button/button";
 @import "../components/map/map";
+@import "../components/mobileMenu/mobileMenu";
+@import "../components/overlay/overlay";
 
 // style
 @import "../pages/layout/_layout";
@@ -45,6 +47,7 @@ $footerBg: #363636;
 @import "../pages/section/gosSites";
 @import "../pages/about";
 @import "../pages/layout/_footer";
+@import "../pages/section/fixedIcon";
 
 // media queris
 @import "../css/adaptive/adaptive"

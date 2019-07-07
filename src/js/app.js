@@ -1,4 +1,5 @@
 import objectFitImages from 'object-fit-images'; // => Полифил для картинок с object-fit 
+import Burger from '../components/burger/burger.js';
 import MainSlider from '../pages/section/mainSlider.js';
 import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
@@ -9,8 +10,14 @@ import Map from '../components/map/map.js';
 window.onload = () => {
 
 	/* Подключаем полифил для свойства object-fill */
-		let images = document.querySelectorAll('.j-image-polyfill');
-		objectFitImages(images);
+	let images = document.querySelectorAll('.j-image-polyfill');
+	objectFitImages(images);
+
+	/* Подключаем главный слайдер */
+	const burgerItem = document.querySelector('.j-burger');
+	if(burgerItem) {
+		Burger();
+	}
 
 	/* Подключаем главный слайдер */
 	const mainSliderItem = document.querySelector('.j-mainSlider');

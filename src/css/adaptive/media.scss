@@ -296,29 +296,7 @@
 
 
 
-	/* фиксированные иконки */
-	.fixedIconBlock {
-		width: 65px;
-	}
-	.fixedIcon {
-		width: 55px;
-		height: 90px;
-		border-radius: 20px 0 0 20px;
-		&:first-child {
-			margin-bottom: 10px;
-		}
-		&:before {
-			width: 37px;
-			height: 36px;
-			right: 7px;
-		}
-		&:hover {
-			width: 65px;
-			&:before {
-				right: 17px;
-			}
-		}
-	}
+
 
 	/* для внутренних страниц */
 	
@@ -939,30 +917,7 @@
 
 	
 
-	/* фиксированные иконки */
-	.fixedIconBlock {
-		width: 50px;
-	}
-	.fixedIcon {
-		width: 40px;
-		height: 60px;
-		border-radius: 10px 0 0 10px;
-		&:first-child {
-			margin-bottom: 7px;
-		}
-		&:before {
-			width: 27px;
-			height: 26px;
-			right: 5px;
-			top: 18px;
-		}
-		&:hover {
-			width: 50px;
-			&:before {
-				right: 15px;
-			}
-		}
-	}
+
 
 	/* для внутренних страниц */
 	
@@ -1400,10 +1355,7 @@
 
 	
 
-	/* фиксированные иконки */
-	.fixedIconBlock {
-		display: none;
-	}
+
 
 	/* для внутренних страниц */
 	
@@ -2004,22 +1956,6 @@
 		right: 5px;
 	}
 
-
-
-	/* мобильное меню на главной странице */
-	.mobileMenuBlock {
-		width: 100%;
-		padding: 30px;
-	}
-	.mobileMenuBlock__close {
-		top: 10px;
-		right: 10px;
-		width: 20px;
-		height: 20px;
-	}
-	.mobileMenu__link {
-		padding: 15px 0;
-	}
 
 	/* попапы */
 

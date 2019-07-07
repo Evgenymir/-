@@ -1,0 +1,116 @@
+.b-fixedIcon {
+	position: fixed;
+	top: 195px;
+	right: 0;
+	z-index: 5;
+	width: 85px;
+	text-align: right;
+
+	@include laptop {
+		width: 65px;
+	}
+
+	@include tablets-landscape {
+		width: 50px;
+	}
+
+	@include tablets {
+		display: none;
+	}
+}
+
+.b-fixedIcon__link {
+	position: relative;
+	@include inlineBlock();
+	width: 75px;
+	height: 100px;
+	background: linear-gradient(60deg, #f80b35, #b94483);
+	border-radius: 20px 0 0 20px;
+	transition: all ease 0.5s;
+
+	&:first-child {
+		margin-bottom: 10px;
+	}
+
+	&:before {
+		content: "";
+		width: 47px;
+		height: 46px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		top: 28px;
+		right: 14px;
+		transition: all ease 0.5s;
+	}
+
+	&:hover {
+		width: 85px;
+
+		&:before {
+			right: 24px;
+		}
+	}
+
+	&.subscribe {
+		&:before {
+			background-image: url(../img/icon/subscribe.png);
+		}
+	}
+
+	&.interview {
+		&:before {
+			background-image: url(../img/icon/interview.png);
+		}
+	}
+
+	@include laptop {
+		width: 55px;
+		height: 90px;
+		border-radius: 20px 0 0 20px;
+
+		&:first-child {
+			margin-bottom: 10px;
+		}
+
+		&:before {
+			width: 37px;
+			height: 36px;
+			right: 7px;
+		}
+
+		&:hover {
+			width: 65px;
+
+			&:before {
+				right: 17px;
+			}
+		}
+	}
+
+	@include tablets-landscape {
+		width: 40px;
+		height: 60px;
+		border-radius: 10px 0 0 10px;
+
+		&:first-child {
+			margin-bottom: 7px;
+		}
+
+		&:before {
+			width: 27px;
+			height: 26px;
+			right: 5px;
+			top: 18px;
+		}
+
+		&:hover {
+			width: 50px;
+
+			&:before {
+				right: 15px;
+			}
+		}
+	}
+}
