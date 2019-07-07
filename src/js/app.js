@@ -3,6 +3,7 @@ import MainSlider from '../pages/section/mainSlider.js';
 import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
 import SliderPartners from '../pages/section/partners.js';
+import Map from '../components/map/map.js';
 
 window.onload = () => {
 
@@ -32,6 +33,12 @@ window.onload = () => {
 	const sliderPartnersItem = document.querySelector('.j-slider-partners');
 	if(sliderPartnersItem) {
 		SliderPartners();
+	}
+
+	/* Подключаем карту Яндекса */
+	const mapItem = document.querySelector('.j-map');
+	if(mapItem) {
+		Map();
 	}
 
 };

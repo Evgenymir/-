@@ -1,0 +1,16 @@
+.b-mapBlock
+    .b-container
+        .b-mapBlock__title.b-title
+            h2 инфраструктура поддержки предпринимателей
+    .b-mapBlock-wrapper
+        include ../../components/map/map
+        .b-mapBlock__filter
+            .b-container
+                form.b-mapBlock__filter-form(action="" method="POST" enctype="multipart/form-data")
+                    select(name="" id="")
+                        option(value="1") Все объекты инфраструктуры
+                        option(value="2") Все объекты инфраструктуры
+                        option(value="3") Все объекты инфраструктуры
+                        option(value="4") Все объекты инфраструктуры
+                        option(value="5") Все объекты инфраструктуры
+                    button.b-mapBlock__filter-button(type="submit") Фильтровать
