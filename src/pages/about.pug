@@ -4,7 +4,99 @@ extends layout/_layout-inner.pug
 append config
 	- var headTitle = 'О центре';
 	- var currentURL = 'about.html';
+	- var breadCrumbs = 'О центре';
 
 //- Блок контента страницы
 
 block content
+	p.b-about-p-desc Центр развития и поддержки предпринимательства был создан в 2010 году с целью организации централизованного предоставления услуг для юридических лиц и индивидуальных предпринимателей по различным направлениям регулирования предпринимательской деятельности.
+	.b-about-ourMission
+		p
+			strong Наша миссия:
+		p.b-about-ourMission__title Развитие малого и среднего <br/> бизнеса в Санкт-Петербурге
+	.b-about-blockBg_grey
+		p Сегодня Центр развития и поддержки предпринимательства - единственная многопрофильная организация в Санкт-Петербурге, обратившись в которую, предприниматели могут не только получить консультации по широкому кругу вопросов, но также найти партнеров, заказчиков, пройти обучение и получить  адресную помощь.
+		p
+			strong Поддержка малого и среднего предпринимательства осуществляется в рамках подпрограммы «Развитие малого и среднего предпринимательства» государственной программы Санкт-Петербурга «Развитие предпринимательства и потребительского рынка в Санкт-Петербурге» на 2015-2020 годы, утвержденной постановлением Правительства Санкт-Петербурга от 30.06.2014 № 554.
+
+	.b-main-title.b-titleTwo.bgLinearDarkBlue
+		h2 Чем Центр будет полезен Вам?
+	ul.b-about-centerUsefulToYou
+		li.b-about-centerUsefulToYou__item.one
+			p Консультируем по всем специальным программам государственной поддержки
+		li.b-about-centerUsefulToYou__item.two
+			p Консультируем по финансовой и инфраструктурной поддержке
+		li.b-about-centerUsefulToYou__item.three
+			p Консультируем по правовой поддержке, бухгалтерскому и налоговому учету
+		li.b-about-centerUsefulToYou__item.four
+			p Оказываем помощь в области производственной кооперации
+		li.b-about-centerUsefulToYou__item.five
+			p Проводим бесплатные обучающие семинары
+		li.b-about-centerUsefulToYou__item.six
+			p Содействуем в выходе на внешние рынки
+		li.b-about-centerUsefulToYou__item.seven
+			p Работаем над снижением административных барьеров
+		li.b-about-centerUsefulToYou__item.eight
+			p Оказываем поддержку легкой промышленности и модной индустрии
+		li.b-about-centerUsefulToYou__item.nine
+			p Оказываем поддержку начинающим предпринимателям
+		li.b-about-centerUsefulToYou__item.ten
+			p Реализуем программы поддержки предпринимателей в сфере  ремесленничества
+		li.b-about-centerUsefulToYou__item.eleven
+			p Проводим оценку регулирующего воздействия
+	ul.b-about-advantages
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/consultations.png" alt="icon")
+			span более
+			p 25 000
+			span консультаций
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/list.png" alt="icon")
+			span более
+			p 1 000
+			span проверок документов <br/> для получения<br/> субсидий
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/subsidies.png" alt="icon")
+			span более
+			p 1 000
+			span выданных<br/> субсидий
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/education.png" alt="icon")
+			span более
+			p 20
+			span образовательных<br/> программ
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/seminars.png" alt="icon")
+			span более
+			p 200
+			span обучающих<br/> смиинаров
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/report.png" alt="icon")
+			span более
+			p 200
+			span выступлений<br/> с тематическими<br/> докладами
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/events.png" alt="icon")
+			span более
+			p 6 000
+			span СМСП в реестре<br/> получателей подержки<br/> ЦРПП
+		li.b-about-advantages__item
+			.b-about-advantages__icon
+				img(src="./img/icon/provider.png" alt="icon")
+			span более
+			p 1 000
+			span поставщиков<br/> крупных<br/> производственных<br/> компаний СПБ
+
+	.b-main-title.b-titleTwo.bgLinearDarkBlue
+		h2 Отчеты и постановления
+	.b-about-links
+		a.b-about-links__item(href="#" download) Годовой отчет о ходе реализации и оценке эффективности реализации государственной программы Санкт-Петербурга "Развитие предпринимательства и потребительского рынка в Санкт-Петербурге на 2015-2020 годы" за 2016 год
+		a.b-about-links__item(href="#" download) Постановление о государственной программе Санкт-Петербурга "Развитие предпринимательства и потребительского рынка в Санкт-Петербурге" на 2015-2020 годы"
+		a.b-about-links__item(href="#" download) Годовой отчет о ходе реализации и оценке эффективности реализации государственной программы Санкт-Петербурга "Развитие предпринимательства и потребительского рынка в Санкт-Петербурге на 2015-2020 годы" за 2015 год

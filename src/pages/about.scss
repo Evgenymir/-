@@ -1,0 +1,419 @@
+.b-about-p-desc {
+	@include plumb(light);
+	font-size: rem(27px);
+
+	@include laptop {
+		font-size: rem(20px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(18px);
+	}
+
+	@include tablets {
+		font-size: rem(16px);
+	}
+}
+
+.b-about-ourMission {
+	font-size: rem(32px);
+	line-height: 1;
+	color: #fff;
+	background:url(../img/bg/ourMissing.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 90px 4.5% 150px;
+	margin-bottom: 40px;
+
+	strong {
+		@include plumb(bold);
+	}
+
+	@include laptop {
+		font-size: rem(24px);
+	    padding: 70px 4.5% 100px;
+	    margin-bottom: 30px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(22px);
+	    padding: 60px 4.5% 80px;
+	    margin-bottom: 20px;
+	}
+
+	@include tablets {
+		font-size: rem(18px);
+	    padding: 30px 4.5% 40px;
+	    margin-bottom: 15px;
+	}
+}
+
+.b-about-ourMission__title {
+	@include plumb(light);
+	font-size: rem(54px);
+	line-height: 1.2;
+	padding-top: 30px;
+
+	@include laptop {
+		font-size: rem(40px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(34px);
+		padding-top: 10px;
+	}
+
+	@include tablets {
+		font-size: rem(26px);
+	}
+
+	@media screen and (max-width: 380px) {
+		font-size: rem(20px);
+	}
+}
+.b-about-blockBg_grey {
+	@include plumb(light);
+	color: #464646;
+	background-color: #f8f8f8;
+	padding: 50px 4.5%;
+	margin-bottom: 80px;
+
+	p {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	strong {
+		@include plumb(bold);
+	}
+
+	@include laptop {
+		margin-bottom: 50px;
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	@include tablets {
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+ul.b-about-centerUsefulToYou {
+	@include flex(flex-start);
+	list-style-type: none;
+	margin-left: -1%;
+	padding: 0;
+	padding-top: 50px;
+
+	@include laptop {
+		padding-top: 40px;
+	}
+
+	@include tablets-landscape {
+		padding-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	@include tablets {
+		padding-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.b-about-centerUsefulToYou__item {
+	position: relative;
+	z-index: 1;
+	width: 32.3%;
+	min-width: 100px;
+	@include plumb(light);
+	font-size: rem(16px);
+	margin-left: 1%;
+	margin-bottom: 25px;
+
+	&:before {
+		@include plumb(bold);
+		font-size: rem(100px);
+		color: #dde9ff;
+		line-height: 1;
+		position: absolute;
+		top: -18px;
+		left: 0;
+		z-index: -1;
+	}
+
+	p {
+		max-width: 275px;
+	}
+
+	&.one {
+		&:before {
+			content: "01";
+		}
+	}
+
+	&.two {
+		&:before {
+			content: "02";
+		}
+	}
+
+	&.three {
+		&:before {
+			content: "03";
+		}
+	}
+
+	&.four {
+		&:before {
+			content: "04";
+		}
+	}
+
+	&.five {
+		&:before {
+			content: "05";
+		}
+	}
+
+	&.six {
+		&:before {
+			content: "06";
+		}
+	}
+
+	&.seven {
+		&:before {
+			content: "07";
+		}
+	}
+
+	&.eight {
+		&:before {
+			content: "08";
+		}
+	}
+
+	&.nine {
+		&:before {
+			content: "09";
+		}
+	}
+
+	&.ten {
+		&:before {
+			content: "10";
+		}
+	}
+
+	&.eleven {
+		&:before {
+			content: "11";
+		}
+	}
+
+	@include tablets-landscape {
+		width: 49%;
+	}
+
+	@include tablets {
+		&:before {
+			font-size: rem(80px);
+			top: -10px;
+		}
+	}
+
+	@include mobile {
+		width: 275px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		&:before {
+			font-size: rem(60px);
+		}
+	}
+}
+
+.b-about-advantages {
+	@include flex(center);
+	background: url(../img/bg/aboutCenter__advantages.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 40px 0 10px;
+	list-style-type: none;
+	margin-bottom: 60px;
+
+	@include laptop {
+		margin-bottom: 40px;
+	}
+
+	@include tablets-landscape {
+		margin-bottom: 30px;
+	}
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.b-about-advantages__item {
+	width: 25%;
+	@include plumb(light);
+	color: #fff;
+	text-align: center;
+	padding: 0 1%;
+	margin-bottom: 45px;
+
+	span {
+		display: block;
+		line-height: 1.1;
+	}
+
+	&:nth-child(7) {
+		img {
+			margin-top: 20px;
+		}
+	}
+
+	p {
+		@include plumb(bold); 
+		font-size: rem(54px);
+		line-height: 1;
+		margin-bottom: 0;
+	}
+
+	@include laptop {
+		margin-bottom: 30px;
+
+		p {
+			font-size: rem(40px);
+			margin-bottom: 0;
+		}
+	}
+
+	@include tablets-landscape {
+		p {
+			font-size: rem(32px);
+			margin-bottom: 0;
+		}
+	}
+
+	@include tablets {
+		width: 32.3%;
+		margin-bottom: 20px;
+
+		p {
+			font-size: rem(30px);
+			margin-bottom: 0;
+		}
+	}
+
+	@include mobile {
+		@include inlineBlock();
+		width: 49%;
+		margin-bottom: 30px;
+
+		&:nth-child(7) img {
+		    margin-top: 0;
+		}
+	}
+}
+
+.b-about-advantages__icon {
+	height: 80px;
+	margin-bottom: 12px;
+
+	img {
+		width: 78px;
+	}
+
+	@include laptop {
+		height: 70px;
+		margin-bottom: 10px;
+
+		img {
+		    width: 60px;
+		}
+	}
+
+	@include tablets-landscape {
+		height: 60px;
+		margin-bottom: 3px;
+
+		img {
+		    width: 50px;
+		}
+	}
+
+	@include tablets {
+		height: 55px;
+	}
+
+	@include mobile {
+		height: 65px;
+	}
+}
+
+.b-about-links__item {
+	position: relative;
+	display: block;
+	@include plumb(light);
+	color: $red;
+	line-height: 1.3;
+	text-decoration: none;
+	padding-left: 100px;
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		content: "";
+		width: 47px;
+		height: 47px;
+		background:url(../img/icon/download.png) no-repeat center center;
+		background-size: contain;
+		position: absolute;
+		top: 2px;
+		left: 0;
+	}
+
+	@include laptop {
+		padding-left: 70px;
+		margin-bottom: 20px;
+	}
+
+	@include tablets-landscape {
+		padding-left: 60px;
+		margin-bottom: 15px;
+
+		&:before {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	@include mobile {
+		padding-left: 40px;
+
+		&:before {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}

@@ -1,3 +1,19 @@
+.l-content-inner {
+	background-image: url(../img/bg/bigBall.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+    background-size: 100%;
+    padding: 100px 0;
+
+    @include tablets-landscape {
+    	padding: 50px 0;
+    }
+
+    @include tablets {
+    	background-image: url(../img/bg/bigBall640.png);
+    }
+}
+
 .l-content-flex {
 	@include flex(space-wetween);
 }
@@ -41,10 +57,97 @@
 	}
 }
 
-.l-content-inner {
+.l-section {
 	width: 74.6%;
 
 	@include tablets-landscape {
 		width: 100%;
+	}
+}
+
+.b-breadCrumbs {
+	font-size: rem(16px);
+	color: $grey;
+	margin-bottom: 30px;
+
+	a {
+		color: #464646;
+		text-decoration: none;
+	}
+
+	@include tablets {
+		font-size: rem(12px);
+		margin-bottom: 20px;
+	}
+}
+
+.b-breadCrumbs__delimiter {
+	margin: 0 10px;
+}
+
+.b-main-title {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 45px;
+
+	&:before {
+		content: "";
+		width: 27px;
+		height: 100%;
+		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	@include laptop {
+		padding-left: 30px;
+		margin-bottom: 30px;
+
+		&:before {
+			width: 20px;
+		}
+	}
+
+	@include tablets-landscape {
+		padding-left: 20px;
+	    margin-bottom: 20px;
+
+	    &:before {
+			width: 7px;
+		}
+	}
+}
+
+.b-section-content {
+	font-size: rem(20px);
+	color: $text;
+
+	p {
+		margin-bottom: 25px;
+	}
+
+	@include laptop {
+		font-size: rem(18px);
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include tablets-landscape {
+		font-size: rem(16px);
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+	@include tablets {
+		font-size: rem(14px);
+
+		p {
+			margin-bottom: 10px;
+		}
 	}
 }

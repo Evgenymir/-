@@ -242,17 +242,7 @@
 
 
 
-	/* контент */
-	.generalBlock__content {
-		font-size: rem(18px);
-	}
-	.generalBlock__title {
-		padding-left: 30px;
-		margin-bottom: 30px;
-		&:before {
-			width: 20px;
-		}
-	}
+
 
 
 
@@ -573,47 +563,6 @@
 
 	/* Стили для контента - о центре */
 
-	.aboutCenterContent p {
-		margin-bottom: 20px;
-	}
-	.aboutCenterContent__desc {
-		font-size: rem(20px);
-	}
-	.aboutCenterContent__ourMissionBlock {
-	    font-size: rem(24px);
-	    padding: 70px 4.5% 100px;
-	    margin-bottom: 30px;
-	}
-	.aboutCenterContent__ourMissionBlock__title {
-		font-size: rem(40px);
-	}
-	.aboutCenterContent__blockBg--grey {
-		margin-bottom: 50px;
-	}
-	ul.aboutCenterContent__centerUsefulToYou {
-		padding-top: 40px;
-	}
-	.aboutCenterContent__advantages {
-		margin-bottom: 40px;
-	}
-	.aboutCenterContent__advantages__item {
-		margin-bottom: 30px;
-		p {
-			font-size: rem(40px);
-			margin-bottom: 0;
-		}
-	}
-	.aboutCenterContent__advantages__item__icon {
-		height: 70px;
-		margin-bottom: 10px;
-		img {
-		    width: 60px;
-		}
-	}
-	.aboutCenterContent__link {
-		padding-left: 70px;
-		margin-bottom: 20px;
-	}
 
 	/* Стили для контента - о центре - новости */
 	
@@ -709,29 +658,8 @@
 
 
 
-	/* сайд бар */
 
 
-	
-
-	/* контент */
-	
-	.PageContent {
-		padding: 50px 0;
-	}
-	.generalBlock__main {
-		
-	}
-	.generalBlock__content {
-		font-size: rem(16px);
-	}
-	.generalBlock__title {
-	    padding-left: 20px;
-	    margin-bottom: 20px;
-	    &:before {
-			width: 7px;
-		}
-	}
 
 
 
@@ -1102,57 +1030,7 @@
 
 	/* Стили для контента - о центре */
 
-	.aboutCenterContent p {
-		margin-bottom: 15px;
-	}
-	.aboutCenterContent__desc {
-		font-size: rem(18px);
-	}
-	.aboutCenterContent__ourMissionBlock {
-	    font-size: rem(22px);
-	    padding: 60px 4.5% 80px;
-	    margin-bottom: 20px;
-	}
-	.aboutCenterContent__ourMissionBlock__title {
-		font-size: rem(34px);
-		padding-top: 10px;
-	}
-	.aboutCenterContent__blockBg--grey {
-		margin-bottom: 30px;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	ul.aboutCenterContent__centerUsefulToYou {
-		padding-top: 30px;
-		margin-bottom: 20px;
-	}
-	.aboutCenterContent__centerUsefulToYou__item {
-		width: 49%;
-	}
-	.aboutCenterContent__advantages {
-		margin-bottom: 30px;
-	}
-	.aboutCenterContent__advantages__item {
-		p {
-			font-size: rem(32px);
-			margin-bottom: 0;
-		}
-	}
-	.aboutCenterContent__advantages__item__icon {
-		height: 60px;
-		margin-bottom: 3px;
-		img {
-		    width: 50px;
-		}
-	}
-	.aboutCenterContent__link {
-		padding-left: 60px;
-		margin-bottom: 15px;
-		&:before {
-			width: 40px;
-			height: 40px;
-		}
-	}
+
 
 	/* Стили для контента - о центре - новости */
 	
@@ -1220,18 +1098,6 @@
 	
 
 
-
-	/* контент */
-	.PageContent {
-		background-image: url(../img/bg/bigBall640.png);
-	}
-	.generalBlock__content {
-		font-size: rem(14px);
-	}
-	.breadCrumbs {
-		font-size: rem(12px);
-		margin-bottom: 20px;
-	}
 
 	
 
@@ -1625,49 +1491,6 @@
 
 	/* Стили для контента - о центре */
 
-	.aboutCenterContent p {
-		margin-bottom: 10px;
-	}
-	.aboutCenterContent__desc {
-		font-size: rem(16px);
-	}
-	.aboutCenterContent__ourMissionBlock {
-	    font-size: rem(18px);
-	    padding: 30px 4.5% 40px;
-	    margin-bottom: 15px;
-	}
-	.aboutCenterContent__ourMissionBlock__title {
-		font-size: rem(26px);
-	}
-	.aboutCenterContent__blockBg--grey {
-		margin-bottom: 20px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-	ul.aboutCenterContent__centerUsefulToYou {
-		padding-top: 20px;
-		margin-bottom: 10px;
-	}
-	.aboutCenterContent__centerUsefulToYou__item {
-		&:before {
-			font-size: rem(80px);
-			top: -10px;
-		}
-	}
-	.aboutCenterContent__advantages {
-		margin-bottom: 20px;
-	}
-	.aboutCenterContent__advantages__item {
-		width: 32.3%;
-		margin-bottom: 20px;
-		p {
-			font-size: rem(30px);
-			margin-bottom: 0;
-		}
-	}
-	.aboutCenterContent__advantages__item__icon {
-		height: 55px;
-	}
 
 	/* Стили для контента - о центре - новости */ 
 
@@ -2064,39 +1887,6 @@
 
 	/* Стили для контента - о центре */
 
-	ul.aboutCenterContent__centerUsefulToYou {
-		display: block;
-	}
-	.aboutCenterContent__centerUsefulToYou__item {
-		width: 275px;
-		margin: 0 auto;
-		margin-bottom: 20px;
-		&:before {
-			font-size: rem(60px);
-		}
-	}
-	.aboutCenterContent__advantages {
-		display: block;
-	}
-	.aboutCenterContent__advantages__item {
-		@include inlineBlock();
-		width: 49%;
-		margin-bottom: 30px;
-		&:nth-child(7) img {
-		    margin-top: 0;
-		}
-	}
-	.aboutCenterContent__advantages__item__icon {
-		height: 65px;
-	}
-	.aboutCenterContent__link {
-		padding-left: 40px;
-		&:before {
-			width: 30px;
-			height: 30px;
-		}
-	}
-
 
 
 	/* Стили для контента - о центре - новости */ 
@@ -2191,9 +1981,7 @@
 	}
 
 	/* Стили для контента - о центре */
-	.aboutCenterContent__ourMissionBlock__title {
-		font-size: rem(20px);
-	}
+
 	/* Стили для контента - о центре - новости */ 
 	.filterForm {
 	    padding: 15px 10px;

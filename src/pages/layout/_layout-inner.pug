@@ -25,13 +25,20 @@ html(lang="ru-RU")
 			include _header-inner.pug
 
 		// Контент
-		main.l-content
+		main.l-content-inner
 			.b-container
 				.l-content-flex
 					aside.l-aside.j-aside
 						include ../../components/asideMenu/asideMenu
-					section.l-content-inner
-						block content
+					section.l-section
+						.b-breadCrumbs
+							a(href="#") Главная
+							span.b-breadCrumbs__delimiter |
+							span #{breadCrumbs}
+						.b-main-title.b-titleTwo.bgLinearRed
+							h1 #{headTitle}
+						.b-section-content
+							block content
 
 		// Подвал
 		footer.l-footer.footer
