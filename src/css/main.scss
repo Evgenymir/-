@@ -25,13 +25,16 @@ $footerBg: #363636;
 @import "../components/logo/logo";
 @import "../components/menu/menu";
 @import "../components/burger/burger";
+@import "../components/burgerTwo/burgerTwo";
 @import "../components/button/button";
 @import "../components/map/map";
 @import "../components/mobileMenu/mobileMenu";
+@import "../components/asideMenu/asideMenu";
 @import "../components/overlay/overlay";
 
 // style
 @import "../pages/layout/_layout";
+@import "../pages/layout/_layout-inner";
 @import "../pages/layout/_header";
 @import "../pages/index";
 @import "../pages/section/mainScreen";

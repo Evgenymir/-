@@ -5,6 +5,7 @@ const popup = () => {
 	const overlay = document.querySelector('.j-overlay');
 	const modal = Array.from(document.querySelectorAll('.j-popup'));
 	const mobileMenu = document.querySelector('.j-mobileMenu');
+	const asideMenu = document.querySelector('.j-aside');
 
 	const clickClosePopup = () => {
 		overlay.classList.remove('active');
@@ -25,6 +26,9 @@ const popup = () => {
 			let href = this.getAttribute('href'),
 				correntPopup = document.querySelector(href);
 
+			if(asideMenu) {
+				asideMenu.classList.remove('active');
+			}
 			mobileMenu.classList.remove('active');
 			overlay.classList.add('active');
 			correntPopup.classList.add('active');
