@@ -1,0 +1,37 @@
+.b-custom-list {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	background-color: #f5f5f5;
+	padding: 20px 5px;
+	margin: 0;
+	z-index: 99999;
+	list-style: none;
+
+	@include tablets {
+		display: none;
+	}
+}
+
+.b-custom-list__item {
+	margin-bottom: 5px;
+
+	&.active {
+		.b-custom-list__link {
+			background-color: #000;
+		}
+	}
+}
+
+.b-custom-list__link {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #02A8F4;
+	color: #fff;
+	font-size: rem(12px);
+	line-height: 22px;
+	text-align: center;
+	text-decoration: none;
+}
