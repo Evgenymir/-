@@ -1,0 +1,35 @@
+.fashionPage {
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: transparent;
+
+	.b-header {
+		background: transparent;
+	}
+
+	.header__phone {
+		color: $white;
+	}
+
+	a {
+		color: $white;
+	}
+
+	.b-visuallyImpaired {
+		background-image: url(../img/icon/eyeWhite.png);
+	}
+
+	.b-entry__link:before {
+		background-image: url(../img/icon/entryWhite.png);
+	}
+
+	.b-burger__line {
+		background-color: $white;
+	}
+
+	.b-feedBackLink {
+		background-image: url(../img/icon/feedBackWhite.png);
+	}
+}

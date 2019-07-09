@@ -1,0 +1,26 @@
+extends layout/_layout-fashion.pug
+
+//- меняем или добавляем переменные
+append config
+	- var headTitle = 'Международный центр индустрии и моды';
+	- var currentURL = 'fashion.pug.html';
+	- var logo = 'logoFashionPage.png';
+
+//- Блок контента страницы
+
+block content
+
+	// Главный экран
+	include section/fashion/mainScreen
+
+	// Блок наша миссия
+	include section/fashion/ourMission
+
+	// Слайдер дизайнеров
+	include section/fashion/sliderDesigners
+
+	// Слайдер мероприятий
+	include section/fashion/sliderEvents
+
+	// Новости
+	include section/fashion/fashionNews

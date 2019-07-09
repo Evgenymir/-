@@ -1,0 +1,119 @@
+.b-fashion-mainScreen {
+	position: relative;
+	z-index: 1;
+	background:url(../img/bg/fashionMainScreen.jpg)no-repeat top center;
+	background-size: cover;
+	color: $white;
+	text-align: center;
+	padding: 285px 0 250px;
+
+	&:before {
+		content: "";
+		width: 470px;
+		height: 65%;
+		border: 12px solid $white;
+		position: absolute;
+		right: 0;
+		bottom: 60px; left: 0;
+		margin: auto;
+		z-index: -1;
+		opacity: 0.3;
+	}
+
+	@include laptop {
+		padding: 250px 0 190px;
+
+	    &:before {
+	    	width: 380px;
+	    	bottom: 50px;
+	    	border-width: 8px;
+	    }
+	}
+
+	@include tablets-landscape {
+		padding: 190px 0 140px;
+
+	    &:before {
+	    	width: 260px;
+	    	height: 60%;
+	    	border-width: 5px;
+	    }
+	}
+
+	@include tablets {
+	    &:before {
+	    	width: 200px;
+	    }
+	}
+
+	@include mobile {
+	    padding: 120px 0 100px;
+
+	    &:before {
+	    	width: 165px;
+	    	height: 65%;
+	    	bottom: 30px;
+	    }
+	}
+}
+
+.b-fashion-mainScreen__city {
+	font-size: rem(60px);
+	line-height: 1;
+	margin-bottom: 35px;
+
+	@include laptop-wide {
+		font-size: rem(50px);
+	}
+
+	@include laptop {
+		font-size: rem(44px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(30px);
+		margin-bottom: 20px;
+	}
+
+	@include tablets {
+		font-size: rem(24px);
+	}
+
+	@include mobile {
+		font-size: rem(22px);
+	}
+}
+
+.b-fashion-mainScreen__title {
+	@include plumb();
+	max-width: 1220px;
+	font-size: rem(90px);
+	color: $white;
+	text-transform: uppercase;
+	margin: 0 auto;
+
+	@include laptop-wide {
+		max-width: 900px;
+		font-size: rem(70px);
+	}
+
+	@include laptop {
+		max-width: 710px;
+		font-size: rem(55px);
+	}
+
+	@include tablets-landscape {
+		max-width: 475px;
+		font-size: rem(36px);
+	}
+
+	@include tablets {
+		max-width: 365px;
+		font-size: rem(28px);
+	}
+
+	@include mobile {
+		max-width: 280px;
+		font-size: rem(24px);
+	}
+}

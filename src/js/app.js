@@ -7,6 +7,8 @@ import Tabs from '../pages/section/services.js';
 import SliderActivity from '../pages/section/activity.js';
 import SliderPartners from '../pages/section/partners.js';
 import SliderGosSites from '../pages/section/gosSites.js';
+import SliderDesigners from '../pages/section/fashion/sliderDesigners.js';
+import SliderEvents from '../pages/section/fashion/sliderEvents.js';
 import AsideMenu from '../components/asideMenu/asideMenu.js';
 import Map from '../components/map/map.js';
 
@@ -56,6 +58,18 @@ window.onload = () => {
 	const sliderGosSitesItem = document.querySelector('.j-slider-gosSites');
 	if(sliderGosSitesItem) {
 		SliderGosSites();
+	}
+
+	/* Подключаем слайдер дизайнеров на странице Моды */
+	const sliderDesignersItem = document.querySelector('.j-slider-designers');
+	if(sliderDesignersItem) {
+		SliderDesigners();
+	}
+
+	/* Подключаем слайдер мероприятий на странице Моды */
+	const sliderEventsItem = document.querySelector('.j-fashion-events__slider');
+	if(sliderEventsItem) {
+		SliderEvents();
 	}
 
 	/* Подключаем попапы */

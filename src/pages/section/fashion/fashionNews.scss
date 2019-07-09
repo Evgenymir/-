@@ -1,0 +1,156 @@
+.b-fashion-news {
+	padding: 80px 0;
+
+	@include laptop-wide {
+		padding: 70px 0;
+	}
+
+	@include laptop {
+		padding: 50px 0;
+	}
+
+	@include tablets-landscape {
+		padding: 40px 0;
+	}
+
+	@include tablets {
+		padding: 30px 0;
+	}
+}
+
+.b-fashion-news__title {
+	color: $text;
+}
+
+.b-fashion-news__list {
+	@include flex(center);
+	margin-left: -1%;
+	margin-bottom: 20px;
+
+	@include tablets-landscape {
+		margin-bottom: 15px;
+	}
+
+	@include tablets {
+		display: block;
+		margin-left: 0;
+	}
+}
+
+.b-fashion-news__item {
+	width: 32.3%;
+	margin-left: 1%;
+	background-color: #ebebeb;
+	margin-bottom: 20px;
+
+	@include tablets {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.b-fashion-news__item-date {
+	font-size: rem(54px);
+	color: $grey;
+	line-height: 1;
+	text-align: right;
+	background-color: $white;
+
+	@include laptop-wide {
+		font-size: rem(44px);
+	}
+
+	@include laptop {
+		font-size: rem(34px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(22px);
+	}
+
+	@include tablets {
+		font-size: rem(20px);
+	}
+}
+
+.b-fashion-news__item-img {
+	@include bg(cover);
+	display: block;
+	height: 310px;
+	overflow: hidden;
+
+	@include laptop-wide {
+		height: 250px;
+	}
+
+	@include laptop {
+		height: 200px;
+	}
+
+	@include tablets-landscape {
+		height: 160px;
+	}
+
+	@include tablets {
+		height: 230px;
+	}
+}
+
+.b-fashion-news__item-text {
+	font-size: rem(27px);
+	line-height: 1.1;
+	padding: 40px 7.5% 20px;
+
+	a {
+		color: $violet;
+		text-decoration: none;
+	}
+
+	@include laptop-wide {
+		font-size: rem(22px);
+		padding: 40px 7% 20px;
+	}
+
+	@include laptop {
+		font-size: rem(18px);
+		padding: 25px 7% 20px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(16px);
+		padding: 20px 6% 15px;
+	}
+
+	@include tablets {
+		font-size: rem(16px);
+		padding: 20px 6% 15px;
+	}
+}
+
+.b-fashion-news__item-desc {
+	font-size: rem(20px);
+	color: $grey;
+	text-align: right;
+	padding: 0 7.5% 12px;
+
+	@include laptop-wide {
+		font-size: rem(18px);
+		padding: 0 7% 12px;
+	}
+
+	@include laptop {
+		font-size: rem(16px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(14px);
+	}
+
+	@include tablets {
+		font-size: rem(14px);
+	}
+}
+
+.b-fashion-news__allNews {
+	text-align: center;
+}

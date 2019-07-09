@@ -170,7 +170,34 @@ img {max-width: 100%;}
 	}
 }
 
-.buttonFashion {
+.b-fashion__title {
+	font-size: rem(27px);
+	color: $white;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin-bottom: 70px;
+
+	@include laptop {
+		font-size: rem(24px);
+		letter-spacing: 5px;
+		margin-bottom: 50px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(22px);
+		letter-spacing: 3px;
+		margin-bottom: 30px;
+	}
+
+	@include tablets {
+		font-size: rem(20px);
+		letter-spacing: 2px;
+		margin-bottom: 25px;
+	}
+}
+
+.b-button-fashion {
 	position: relative;
 	@include inlineBlock();
 	width: 470px;
@@ -187,12 +214,14 @@ img {max-width: 100%;}
 	border-right: none;
 	cursor: pointer;
 	transition: all ease 0.5s;
+
 	&:hover {
 		&:before,
 		&:after {
 			height: 0;
 		}
 	}
+
 	&:before,
 	&:after {
 		content: "";
@@ -202,13 +231,32 @@ img {max-width: 100%;}
 		position: absolute;
 		transition: all ease 0.5s;
 	}
+
 	&:before {
 		top: 0;
 		left: 0;
 	}
+	
 	&:after {
 		bottom: 0;
 		right: 0;
+	}
+
+	&.violet {
+		border-color: $violet;
+		background-color: $violet;
+
+		&:before, &:after {
+			height:0;
+		}
+
+		&:hover {
+			border-color: $white;
+
+			&:before, &:after {
+				height: 100%;
+			}
+		}
 	}
 
 	@include laptop-wide {

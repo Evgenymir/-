@@ -1,0 +1,330 @@
+.b-fashion-designers {
+	background-color: #363636;
+	padding: 45px 0;
+
+	@include laptop {
+		padding: 35px 0;
+	}
+
+	@include tablets-landscape {
+		padding: 30px 0;
+	}
+}
+
+.b-fashion-designers__slider-wrapper {
+	position: relative;
+
+	@include fullhd {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	@include laptop-wide {
+		max-width: 1110px;
+	}
+
+	@include laptop {
+		max-width: 860px;
+	}
+
+	@include tablets-landscape {
+		max-width: 657px;
+	}
+
+	@include tablets {
+		max-width: 380px;
+	}
+
+	@include mobile {
+		max-width: 80%;
+	}
+}
+
+.b-fashion-designers__slider-item-content {
+	@include flex();
+
+	@include tablets {
+		display: block;
+	}
+}
+
+.b-fashion-designers__slider-item-left {
+	position: relative;
+	width: 49.5%;
+	background-color: $violet;
+	color: $white;
+	text-align: center;
+	margin-right: 1%;
+	padding: 100px 4.8% 60px;
+	order: 1;
+
+	&:after {
+		content: "";
+		width: 100px;
+		height: 100px;
+		background-color: $violet;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		right: -50px;
+	}
+
+	@include laptop-wide {
+		padding: 70px 4.8% 50px;
+
+		&:after {
+			width: 80px;
+    		height: 80px;
+    		margin-top: -40px;
+    		right: -40px;
+		}
+	}
+
+	@include laptop {
+		padding: 50px 4% 30px;
+
+		&:after {
+			width: 40px;
+    		height: 40px;
+    		margin-top: -20px;
+    		right: -20px;
+		}
+	}
+
+	@include tablets-landscape {
+		padding: 30px 4%;
+
+		&:after {
+			width: 30px;
+    		height: 30px;
+    		margin-top: -15px;
+    		right: -15px;
+		}
+	}
+
+	@include tablets {
+		width: 100%;
+
+		&:after {
+			width: 30px;
+    		height: 30px;
+    		right: auto;
+    		left: 50%;
+    		top: -15px;
+    		margin-top: 0;
+    		margin-left: -15px;
+		}
+	}
+
+	@include mobile {
+		padding: 20px 4%;
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.b-fashion-designers__slider-item-name {
+	font-size: rem(54px);
+	line-height: 1;
+	margin-bottom: 25px;
+
+	@include laptop-wide {
+		font-size: rem(46px);
+	}
+
+	@include laptop {
+		font-size: rem(32px);
+	}
+
+	@include tablets-landscape {
+		font-size: rem(24px);
+		margin-bottom: 15px;
+	}
+
+	@include mobile {
+		font-size: rem(22px);
+	}
+}
+
+.b-fashion-designers__slider-item-job {
+	font-size: rem(27px);
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	line-height: 1;
+	margin-bottom: 80px;
+
+	@include laptop-wide {
+		font-size: rem(22px);
+		margin-bottom: 60px;
+	}
+
+	@include laptop {
+		font-size: rem(16px);
+		letter-spacing: 3px;
+		margin-bottom: 40px;
+	}
+
+	@include tablets-landscape {
+		font-size: rem(12px);
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}
+}
+
+.b-fashion-designers__slider-item-text {
+	@include plumb(light);
+	min-height: 270px;
+	font-size: rem(32px);
+	text-align: left;
+	line-height: 1.2;
+	margin-bottom: 20px;
+
+	@include laptop-wide {
+		min-height: 220px;
+		font-size: rem(26px);
+	}
+
+	@include laptop {
+		min-height: 170px;
+		font-size: rem(20px);
+	}
+
+	@include tablets-landscape {
+		min-height: 130px;
+		font-size: rem(16px);
+	}
+
+	@include tablets {
+		min-height: auto;
+	}
+}
+
+.b-fashion-designers__slider-item-right {
+	@include bg(cover);
+	width: 49.5%;
+	order: 2;
+
+	@include tablets {
+		width: 100%;
+		height: 300px;
+		background-position: top center;
+	}
+
+	@include mobile {
+		height: 250px;
+	}
+}
+
+.b-fashion-designers__slider-control {
+	width: 72px;
+	height: 72px;
+	border: 3px solid $grey;
+	border-radius: 50%;
+	transition: all ease 0.5s;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -31px;
+
+	&:before {
+		content: "";
+		width: 34px;
+		height: 23px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -17px;
+		margin-top: -11px;
+	}
+
+	&:hover {
+		border-color: $violet;
+	}
+
+	@include laptop-wide {
+		width: 60px;
+		height: 60px;
+	}
+
+	@include laptop {
+		width: 40px;
+		height: 40px;
+		border-width: 2px;
+
+		&:before {
+			width: 20px;
+		    height: 14px;
+		    margin-left: -10px;
+		    margin-top: -7px;
+		}
+	}
+
+	@include tablets {
+		width: 35px;
+	    height: 35px;
+	    top: 25%;
+    	margin-top: 0;
+	}
+
+	@include mobile {
+		width: 25px;
+	    height: 25px;
+	    top: 25%;
+    	margin-top: 0;
+    	border-width: 1px;
+
+    	&:before {
+    		width: 100%;
+    		height: 8px;
+    		margin-left: 0;
+    		left: 0;
+    		margin-top: -4px;
+    	}
+	}
+}
+
+.b-fashion-designers__prev {
+	left: -6%;
+
+	&:before {
+		background-image: url(../img/icon/arrowSliderPrev.png);
+	}
+
+	@include fullhd {
+		left: -7%;
+	}
+
+	@include tablets {
+		left: -11%;
+	}
+
+	@include mobile {
+		left: -35px;
+	}
+}
+
+.b-fashion-designers__next {
+	right: -6%;
+
+	&:before {
+		background-image: url(../img/icon/arrowSliderNext.png);
+	}
+
+	@include fullhd {
+		right: -7%;
+	}
+
+	@include tablets {
+		right: -11%;
+	}
+
+	@include mobile {
+		right: -35px;
+	}
+}

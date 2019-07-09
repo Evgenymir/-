@@ -1,0 +1,50 @@
+//- Подключаем конфиг с переменными
+block config
+	include _config.pug
+
+//- Подключаем компоненты с миксинами
+include ../../components/button/button
+
+
+doctype html
+html(lang="ru-RU")
+	head
+		include _head.pug
+		block title 
+			title #{headTitle}
+
+		//css
+		block cssLinks
+			link(rel="stylesheet" href=cssPath+"/slick.css")
+			link(rel="stylesheet" href=cssPath+"/main.css")
+
+	body
+		
+		// Шапка
+		
+		header.l-header.header.fashionPage
+			include _header.pug
+
+		// Контент
+		main.l-content
+			block content
+
+		// Подвал
+		footer.l-footer.footer
+			include _footer.pug
+
+		// Иконки фиксированные
+		include ../section/fixedIcon
+
+		// Попап
+		include ../section/popup
+
+		// Мобильное меню
+		include ../../components/mobileMenu/mobileMenu
+
+		// Темная подложка
+		include ../../components/overlay/overlay
+					
+		// script
+		block scripts
+			script(src="./js/app.min.js")
